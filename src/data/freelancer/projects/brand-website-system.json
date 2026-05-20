@@ -1,0 +1,41 @@
+{
+  "id": "freelancer-brand-website-system",
+  "slug": "brand-website-system",
+  "audience": "businesses",
+  "title": "Brand Website System",
+  "category": "Modern Website",
+  "status": "showcase",
+  "featured": false,
+  "summary": "A conversion-focused website system for startups, creators, and local businesses with strong UI and fast performance.",
+  "overview": "A premium website package with homepage, service pages, project showcase, contact flow, SEO-friendly structure, and polished responsive design.",
+  "problem": "Most small business websites look generic and fail to communicate trust quickly.",
+  "solution": "A crisp brand website that combines clear messaging, elegant UI sections, visual proof, and frictionless inquiry paths.",
+  "techStack": ["React", "Vite", "Tailwind CSS", "Framer Motion"],
+  "features": [
+    "Multi-page website",
+    "Service detail pages",
+    "Project showcase",
+    "Contact inquiry flow",
+    "Responsive design",
+    "SEO-ready structure"
+  ],
+  "deliverables": [
+    "Website source code",
+    "Responsive pages",
+    "Basic SEO setup",
+    "Deployment support"
+  ],
+  "media": {
+    "thumbnail": "/images/projects/brand-website-thumb.png",
+    "cover": "/images/projects/brand-website-cover.png",
+    "previewVideo": ""
+  },
+  "links": {
+    "demo": "",
+    "caseStudy": "/projects/brand-website-system",
+    "github": ""
+  },
+  "accent": "coral",
+  "tags": ["Website", "Brand", "SEO", "UI/UX"],
+  "timeline": "1-3 weeks"
+}

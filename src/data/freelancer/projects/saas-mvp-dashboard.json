@@ -1,0 +1,42 @@
+{
+  "id": "freelancer-saas-mvp-dashboard",
+  "slug": "saas-mvp-dashboard",
+  "audience": "startups",
+  "title": "SaaS MVP Dashboard",
+  "category": "Startup MVP",
+  "status": "showcase",
+  "featured": true,
+  "summary": "A launch-ready SaaS dashboard with onboarding, analytics, billing-ready layout, and responsive product UI.",
+  "overview": "A founder-focused MVP build that turns a product idea into a usable web application with clean dashboard UX and scalable architecture.",
+  "problem": "Early-stage founders need a product that looks credible, explains the idea clearly, and can be tested with real users fast.",
+  "solution": "A focused MVP with authentication-ready screens, data views, settings, user flows, and a polished interface for demos and pilots.",
+  "techStack": ["React", "Node.js", "PostgreSQL", "Tailwind CSS", "shadcn/ui"],
+  "features": [
+    "Product dashboard",
+    "User onboarding",
+    "Analytics widgets",
+    "Settings and team views",
+    "Responsive web app UI",
+    "Launch-ready landing flow"
+  ],
+  "deliverables": [
+    "Frontend application",
+    "Backend API base",
+    "Database schema",
+    "Deployment setup",
+    "Product walkthrough"
+  ],
+  "media": {
+    "thumbnail": "/images/projects/saas-mvp-thumb.png",
+    "cover": "/images/projects/saas-mvp-cover.png",
+    "previewVideo": ""
+  },
+  "links": {
+    "demo": "",
+    "caseStudy": "/projects/saas-mvp-dashboard",
+    "github": ""
+  },
+  "accent": "aqua",
+  "tags": ["MVP", "SaaS", "Dashboard", "Startup"],
+  "timeline": "2-4 weeks"
+}

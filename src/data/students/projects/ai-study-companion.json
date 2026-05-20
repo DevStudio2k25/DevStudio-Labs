@@ -1,0 +1,42 @@
+{
+  "id": "student-ai-study-companion",
+  "slug": "ai-study-companion",
+  "audience": "students",
+  "title": "AI Study Companion",
+  "category": "Final Year AI Project",
+  "status": "showcase",
+  "featured": true,
+  "summary": "An AI-powered learning assistant that helps students upload notes, ask questions, generate summaries, and prepare for exams.",
+  "overview": "A complete final year project package with modern UI, AI chatbot flow, document summarization, dashboard analytics, and presentation-ready documentation.",
+  "problem": "Students need a project that feels modern, useful, demo-friendly, and easy to explain during viva.",
+  "solution": "A clean AI study platform with note uploads, intelligent Q&A, flashcard generation, progress tracking, and admin-ready project documentation.",
+  "techStack": ["React", "Node.js", "Express", "MongoDB", "OpenAI API", "Tailwind CSS"],
+  "features": [
+    "AI chat over uploaded notes",
+    "PDF and text summarization",
+    "Flashcard and quiz generation",
+    "Student dashboard",
+    "Admin project report modules",
+    "Viva-friendly demo workflow"
+  ],
+  "deliverables": [
+    "Source code",
+    "Project report",
+    "PPT",
+    "Demo script",
+    "Setup guide"
+  ],
+  "media": {
+    "thumbnail": "/images/projects/ai-study-companion-thumb.png",
+    "cover": "/images/projects/ai-study-companion-cover.png",
+    "previewVideo": ""
+  },
+  "links": {
+    "demo": "",
+    "caseStudy": "/projects/ai-study-companion",
+    "github": ""
+  },
+  "accent": "mint",
+  "tags": ["AI", "Final Year", "Chatbot", "Education"],
+  "timeline": "10-15 days"
+}
