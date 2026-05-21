@@ -33,14 +33,15 @@ export function SiteHeader() {
   }, [isMenuOpen])
 
   return (
-    <header className="sticky top-0 z-50 border-b border-border bg-background/90 backdrop-blur-xl">
-      <div className="mx-auto flex h-16 w-full max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
+    <header className="sticky top-0 z-50 bg-background/75 backdrop-blur-2xl">
+      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-px bg-border" />
+      <div className="mx-auto flex h-[4.75rem] w-full max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         <a
           href="/"
-          className="group relative flex items-center gap-3"
+          className="group relative flex items-center gap-3 rounded-full bg-white/55 py-1.5 pl-1.5 pr-4 shadow-soft ring-1 ring-border transition-all duration-200 hover:-translate-y-0.5 hover:bg-white"
           aria-label="DevStudio Labs home"
         >
-          <span className="grid h-10 w-10 place-items-center rounded-md border border-primary/25 bg-mint shadow-soft transition-transform duration-200 group-hover:-translate-y-0.5">
+          <span className="grid h-11 w-11 place-items-center rounded-full bg-mint text-primary transition-transform duration-200 group-hover:rotate-6">
             <Sparkles className="h-4 w-4 text-primary" aria-hidden="true" />
           </span>
           <span className="flex flex-col leading-none">
@@ -53,7 +54,7 @@ export function SiteHeader() {
           </span>
         </a>
 
-        <nav className="hidden items-center gap-1 lg:flex" aria-label="Main navigation">
+        <nav className="hidden items-center gap-2 rounded-full bg-white/60 p-1.5 shadow-soft ring-1 ring-border lg:flex" aria-label="Main navigation">
           {navItems.map((item, index) => {
             const isActive =
               pathname === item.href ||
@@ -64,16 +65,17 @@ export function SiteHeader() {
                 key={item.href}
                 href={item.href}
                 className={cn(
-                  buttonVariants({ variant: 'ghost', size: 'sm' }),
-                  'group relative overflow-hidden border border-transparent',
-                  isActive &&
-                    'border-primary/20 bg-white/80 text-foreground shadow-soft',
+                  'group relative inline-flex h-10 items-center justify-center overflow-hidden rounded-full px-5 text-sm font-semibold transition-all duration-200',
+                  isActive
+                    ? 'bg-background text-foreground shadow-soft'
+                    : 'text-muted-foreground hover:bg-white/75 hover:text-foreground',
                 )}
                 aria-current={isActive ? 'page' : undefined}
               >
                 <span
                   className={cn(
-                    'absolute inset-x-3 bottom-1 h-1 rounded-full transition-transform duration-200 group-hover:scale-x-100',
+                    'absolute bottom-1.5 left-1/2 h-1 rounded-full transition-all duration-200 group-hover:w-6 group-hover:-translate-x-1/2',
+                    isActive ? 'w-6 -translate-x-1/2' : 'w-0 -translate-x-1/2',
                     isActive ? 'scale-x-100' : 'scale-x-0',
                     index % 4 === 0 && 'bg-mint',
                     index % 4 === 1 && 'bg-aqua',
@@ -89,34 +91,24 @@ export function SiteHeader() {
 
         <div className="hidden items-center gap-3 lg:flex">
           <a
-            href="/contact"
-            className={cn(
-              buttonVariants({ variant: 'outline', size: 'sm' }),
-              pathname === '/contact' &&
-                'border-primary/30 bg-mint/70 text-primary',
-            )}
-            aria-current={pathname === '/contact' ? 'page' : undefined}
-          >
-            Contact
-          </a>
-          <a
             href="/start-project"
             className={cn(
-              buttonVariants({ size: 'sm' }),
-              'bg-primary text-primary-foreground shadow-glow hover:bg-primary/90',
+              'group inline-flex h-12 items-center justify-center gap-3 rounded-full bg-foreground px-5 text-sm font-semibold text-background shadow-soft transition-all duration-200 hover:-translate-y-0.5 hover:bg-primary hover:text-primary-foreground',
               pathname === '/start-project' && 'ring-2 ring-primary/25',
             )}
             aria-current={pathname === '/start-project' ? 'page' : undefined}
           >
             Start Project
-            <ArrowUpRight className="h-4 w-4" aria-hidden="true" />
+            <span className="grid h-7 w-7 place-items-center rounded-full bg-white/15 transition-transform duration-200 group-hover:rotate-45">
+              <ArrowUpRight className="h-4 w-4" aria-hidden="true" />
+            </span>
           </a>
         </div>
 
         <Button
           variant="outline"
           size="icon"
-          className="border-primary/25 bg-mint text-primary lg:hidden"
+          className="h-11 w-11 rounded-full border-border bg-white/80 text-primary shadow-soft lg:hidden"
           aria-label="Open menu"
           aria-expanded={isMenuOpen}
           onClick={() => setIsMenuOpen(true)}
@@ -125,30 +117,17 @@ export function SiteHeader() {
         </Button>
       </div>
 
-      <div
-        className={cn(
-          'fixed inset-0 z-50 lg:hidden',
-          isMenuOpen ? 'pointer-events-auto' : 'pointer-events-none',
-        )}
-        aria-hidden={!isMenuOpen}
-      >
+      {isMenuOpen ? (
+      <div className="fixed inset-0 z-50 lg:hidden">
         <button
           type="button"
-          className={cn(
-            'absolute inset-0 bg-foreground/20 backdrop-blur-sm transition-opacity duration-300',
-            isMenuOpen ? 'opacity-100' : 'opacity-0',
-          )}
+          className="absolute inset-0 bg-foreground/20 backdrop-blur-sm"
           aria-label="Close menu overlay"
           onClick={() => setIsMenuOpen(false)}
         />
 
         <aside
-          className={cn(
-            'absolute right-3 top-3 flex h-[calc(100vh-1.5rem)] w-[min(22rem,calc(100vw-1.5rem))] flex-col overflow-hidden rounded-lg border border-border bg-background shadow-soft transition-all duration-300',
-            isMenuOpen
-              ? 'translate-x-0 opacity-100'
-              : 'translate-x-6 opacity-0',
-          )}
+          className="absolute right-3 top-3 flex h-[calc(100vh-1.5rem)] w-[min(22rem,calc(100vw-1.5rem))] animate-[mobileSheetIn_220ms_ease-out] flex-col overflow-hidden rounded-lg border border-border bg-background shadow-soft"
           aria-label="Mobile navigation"
         >
           <div className="flex items-center justify-between border-b border-border bg-white/70 p-4">
@@ -229,17 +208,6 @@ export function SiteHeader() {
             </div>
             <div className="mt-3 grid gap-2">
               <a
-                href="/contact"
-                className={cn(
-                  buttonVariants({ variant: 'outline' }),
-                  'w-full',
-                  pathname === '/contact' && 'border-primary/30 bg-mint/70 text-primary',
-                )}
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Contact
-              </a>
-              <a
                 href="/start-project"
                 className={cn(buttonVariants(), 'w-full')}
                 onClick={() => setIsMenuOpen(false)}
@@ -251,6 +219,7 @@ export function SiteHeader() {
           </div>
         </aside>
       </div>
+      ) : null}
     </header>
   )
 }

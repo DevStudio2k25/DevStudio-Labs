@@ -1,7 +1,6 @@
 import { SiteFooter } from './components/SiteFooter'
 import { SiteHeader } from './components/SiteHeader'
 import { AboutPage } from './pages/AboutPage'
-import { ContactPage } from './pages/ContactPage'
 import { HomePage } from './pages/HomePage'
 import { ProjectDetailPage } from './pages/ProjectDetailPage'
 import { ProjectsPage } from './pages/ProjectsPage'
@@ -13,7 +12,7 @@ const routes = {
   '/services': ServicesPage,
   '/projects': ProjectsPage,
   '/about': AboutPage,
-  '/contact': ContactPage,
+  '/contact': StartProjectPage,
   '/start-project': StartProjectPage,
 }
 

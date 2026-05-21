@@ -1,0 +1,80 @@
+{
+  "id": "devstudio-learning-platform",
+  "slug": "devstudio",
+  "audience": "students, developers, creators, beginners, content creators",
+  "title": "DevStudio",
+  "category": "Learning Platform",
+  "status": "showcase",
+  "featured": true,
+  "summary": "A modern platform to learn app development, explore AI tools, prompts, wallpapers, and creator resources.",
+  "overview": "DevStudio is a modern learning platform designed for developers, creators, and students who want to learn app development, discover useful AI tools, access prompt libraries, explore resources, and improve their creative workflow through curated content and interactive learning.",
+  "longDescription": "DevStudio is an all-in-one platform focused on learning, creativity, and developer resources. The platform provides educational content related to app development, AI workflows, Flutter projects, website building, and content creation. Users can explore curated AI tools, prompt collections, development resources, YouTube learning content, wallpaper collections, and creator utilities in one place. The goal of DevStudio is to help beginners and creators learn faster, build smarter projects, and access useful resources without searching everywhere. The platform also includes modern UI sections, organized learning modules, creator-focused utilities, and downloadable assets for developers and content creators.",
+  "techStack": [
+    "Flutter",
+    "Dart",
+    "Firebase Auth",
+    "Supabase Realtime Database",
+    "Cloudinary Storage",
+    "YouTube API",
+    "REST API",
+    "Provider / State Management"
+  ],
+  "features": [
+    "AI tools collection",
+    "Prompt library",
+    "Flutter learning resources",
+    "YouTube tutorials section",
+    "Wallpaper store",
+    "Developer resources",
+    "Project showcase",
+    "Modern responsive UI",
+    "Content categories",
+    "Bookmarks and favorites",
+    "Search functionality",
+    "Creator utilities"
+  ],
+  "deliverables": [
+    "Flutter app source code",
+    "Firebase Auth setup",
+    "Supabase realtime database setup",
+    "Cloudinary media storage setup",
+    "Android app UI screens",
+    "Desktop app UI screens",
+    "Project documentation",
+    "Deployment support"
+  ],
+  "media": {
+    "logo": "/images/projects/devstudio.png",
+    "thumbnail": "/images/projects/devstudio-thumb.png",
+    "cover": "/images/projects/devstudio-cover.png",
+    "previewVideo": "",
+    "desktopScreenshots": [
+      { "label": "Learning dashboard desktop", "src": "" },
+      { "label": "AI tools desktop", "src": "" },
+      { "label": "Resources desktop", "src": "" }
+    ],
+    "mobileScreenshots": [
+      { "label": "Home mobile", "src": "" },
+      { "label": "AI tools mobile", "src": "" },
+      { "label": "Wallpaper mobile", "src": "" }
+    ]
+  },
+  "links": {
+    "demo": "",
+    "caseStudy": "/projects/devstudio",
+    "github": ""
+  },
+  "amount": "Approx ₹8,000",
+  "timeline": "10-20 days",
+  "tags": [
+    "Learning",
+    "Flutter",
+    "AI Tools",
+    "Prompts",
+    "Wallpapers",
+    "Developers",
+    "Resources",
+    "Education"
+  ],
+  "accent": "mint"
+}

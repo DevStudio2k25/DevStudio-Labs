@@ -2,10 +2,9 @@
 
 This folder keeps project content embedded in the codebase.
 
-## Folders
+## Folder
 
-- `students/projects`: final year projects and student-focused builds.
-- `freelancer/projects`: startup, business, freelance, and MVP builds.
+- `projects`: real project JSON files shown on the website.
 
 ## Project File Shape
 

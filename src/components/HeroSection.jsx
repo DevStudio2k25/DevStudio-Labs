@@ -1,10 +1,10 @@
 import {
   ArrowRight,
   BadgeCheck,
-  Blocks,
   BrainCircuit,
   Code2,
   Layers3,
+  MessageCircle,
   Rocket,
   Smartphone,
 } from 'lucide-react'
@@ -20,9 +20,9 @@ const services = [
 ]
 
 const projectModules = [
-  { title: 'Student AI Project', meta: 'Docs, demo, viva support', color: 'bg-mint' },
-  { title: 'Founder MVP Sprint', meta: 'Prototype to launch build', color: 'bg-aqua' },
-  { title: 'Modern Web System', meta: 'Website, dashboard, backend', color: 'bg-sky' },
+  { title: 'DevStudio', meta: 'Learning platform listed', color: 'bg-mint' },
+  { title: 'Custom scope', meta: 'Features editable before build', color: 'bg-aqua' },
+  { title: 'WhatsApp brief', meta: 'User sends ready project request', color: 'bg-sky' },
 ]
 
 export function HeroSection() {
@@ -105,15 +105,15 @@ export function HeroSection() {
                   <div>
                     <div className="flex items-center gap-2 text-sm font-semibold text-emerald-900">
                       <BadgeCheck className="h-4 w-4" aria-hidden="true" />
-                      Product Blueprint
+                      Listed Project Preview
                     </div>
                     <p className="mt-2 text-sm leading-6 text-emerald-950/70">
-                      Idea validation, feature planning, UI direction, tech stack,
-                      and working demo flow before build.
+                      Browse real listed projects, review features, tech stack,
+                      amount, screenshots, and send a ready brief.
                     </p>
                   </div>
                   <span className="rounded-md bg-white px-2.5 py-1 text-xs font-semibold text-primary">
-                    Ready
+                    Live
                   </span>
                 </div>
 
@@ -139,19 +139,19 @@ export function HeroSection() {
 
                 <div className="grid grid-cols-3 gap-3">
                   <div className="rounded-md bg-aqua/55 p-3">
-                    <Blocks className="h-4 w-4 text-cyan-800" aria-hidden="true" />
-                    <p className="mt-3 text-lg font-semibold text-cyan-950">42+</p>
-                    <p className="text-xs text-cyan-950/65">modules shipped</p>
+                    <BadgeCheck className="h-4 w-4 text-cyan-800" aria-hidden="true" />
+                    <p className="mt-3 text-lg font-semibold text-cyan-950">1</p>
+                    <p className="text-xs text-cyan-950/65">listed project</p>
                   </div>
                   <div className="rounded-md bg-sky/65 p-3">
                     <Layers3 className="h-4 w-4 text-blue-800" aria-hidden="true" />
                     <p className="mt-3 text-lg font-semibold text-blue-950">8</p>
-                    <p className="text-xs text-blue-950/65">tech tracks</p>
+                    <p className="text-xs text-blue-950/65">stack items</p>
                   </div>
                   <div className="rounded-md bg-lime/70 p-3">
-                    <Rocket className="h-4 w-4 text-lime-900" aria-hidden="true" />
-                    <p className="mt-3 text-lg font-semibold text-lime-950">MVP</p>
-                    <p className="text-xs text-lime-950/65">launch ready</p>
+                    <MessageCircle className="h-4 w-4 text-lime-900" aria-hidden="true" />
+                    <p className="mt-3 text-lg font-semibold text-lime-950">Brief</p>
+                    <p className="text-xs text-lime-950/65">ready to send</p>
                   </div>
                 </div>
               </div>

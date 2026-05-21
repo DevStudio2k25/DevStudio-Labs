@@ -120,8 +120,8 @@ export function ProjectsPage() {
                   </div>
 
                   <div className="mt-4 grid gap-3">
-                    <PreviewRow label="What it solves" value={featuredProject.problem} color="bg-mint" />
-                    <PreviewRow label="How it works" value={featuredProject.solution} color="bg-aqua" />
+                    <PreviewRow label="Amount" value={featuredProject.amount} color="bg-mint" />
+                    <PreviewRow label="Top features" value={featuredProject.features.slice(0, 4).join(', ')} color="bg-aqua" />
                     <PreviewRow label="Timeline" value={featuredProject.timeline} color="bg-lime" />
                   </div>
                 </div>
