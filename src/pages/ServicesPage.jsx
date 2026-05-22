@@ -1,67 +1,15 @@
 import {
   ArrowRight,
   BadgeCheck,
-  BrainCircuit,
   CheckCircle2,
-  Code2,
   FileText,
-  Globe2,
-  Rocket,
-  Smartphone,
   Sparkles,
 } from 'lucide-react'
 
 import { SectionHeader } from '../components/SectionHeader'
 import { buttonVariants } from '../components/ui/button'
+import { services } from '../data/services'
 import { cn } from '../lib/utils'
-
-const services = [
-  {
-    title: 'Final Year Projects',
-    audience: 'For college students',
-    text: 'Premium academic projects that look modern, explain clearly, and come with the support material students actually need.',
-    icon: Code2,
-    color: 'bg-lime text-lime-950',
-    timeline: '7-15 days',
-    outcomes: ['Source code', 'Report + PPT', 'Demo script', 'Viva-ready flow'],
-  },
-  {
-    title: 'Flutter Multiplatform Apps',
-    audience: 'For products and student apps',
-    text: 'Clean mobile-first applications for Android, iOS, and web with polished flows and scalable feature structure.',
-    icon: Smartphone,
-    color: 'bg-mint text-emerald-900',
-    timeline: '2-5 weeks',
-    outcomes: ['App UI', 'Auth flows', 'API-ready structure', 'Responsive screens'],
-  },
-  {
-    title: 'AI-Powered Products',
-    audience: 'For modern ideas',
-    text: 'Useful AI tools like chat assistants, document intelligence, automation systems, and recommendation workflows.',
-    icon: BrainCircuit,
-    color: 'bg-aqua text-cyan-900',
-    timeline: '10 days-4 weeks',
-    outcomes: ['AI workflows', 'Prompt logic', 'Data handling', 'Product dashboard'],
-  },
-  {
-    title: 'Modern Websites',
-    audience: 'For startups and businesses',
-    text: 'Multi-page websites that communicate trust, show proof, and move users toward clear inquiry or conversion actions.',
-    icon: Globe2,
-    color: 'bg-sky text-blue-900',
-    timeline: '1-3 weeks',
-    outcomes: ['Home + pages', 'Project showcase', 'Contact flow', 'SEO-ready structure'],
-  },
-  {
-    title: 'Startup MVPs',
-    audience: 'For founders',
-    text: 'Focused MVP builds with the right first features, sharp UI, and launch-ready structure for testing with real users.',
-    icon: Rocket,
-    color: 'bg-coral text-rose-900',
-    timeline: '2-6 weeks',
-    outcomes: ['MVP scope', 'Dashboard', 'Backend base', 'Deployment support'],
-  },
-]
 
 const process = [
   ['01', 'Map the idea', 'We clarify audience, features, deadline, and the real outcome the build needs to create.'],
@@ -83,7 +31,7 @@ export function ServicesPage() {
         <div className="absolute right-8 top-10 hidden h-32 w-32 rounded-full bg-aqua/70 blur-3xl lg:block" />
         <div className="absolute bottom-8 left-12 hidden h-28 w-28 rounded-full bg-mint/70 blur-3xl lg:block" />
 
-        <div className="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-[1fr_0.72fr] lg:px-8">
+        <div className="mx-auto grid w-full gap-10 px-4 sm:px-6 lg:grid-cols-[1fr_0.72fr] lg:px-8">
           <div>
             <div className="inline-flex items-center gap-2 rounded-md border border-primary/20 bg-white/75 px-3 py-2 text-sm font-semibold text-primary shadow-soft">
               <Sparkles className="h-4 w-4" />
@@ -134,7 +82,7 @@ export function ServicesPage() {
       </section>
 
       <section className="py-16 sm:py-20">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto w-full px-4 sm:px-6 lg:px-8">
           <SectionHeader
             eyebrow="Core services"
             title="Five focused ways to build with us."
@@ -146,9 +94,10 @@ export function ServicesPage() {
               const Icon = service.icon
 
               return (
-                <article
+                <a
+                  href={`/services/${service.slug}`}
                   key={service.title}
-                  className="flex min-h-[360px] flex-col rounded-lg border border-border bg-white/80 p-5 shadow-soft transition-all duration-200 hover:-translate-y-1 hover:border-primary/30"
+                  className="group flex min-h-[360px] flex-col rounded-lg border border-border bg-white/80 p-5 shadow-soft transition-all duration-300 hover:-translate-y-1 hover:border-primary/40 hover:shadow-glow"
                 >
                   <div className="flex items-start justify-between gap-4">
                     <div>
@@ -179,7 +128,10 @@ export function ServicesPage() {
                       </div>
                     ))}
                   </div>
-                </article>
+                  <div className="mt-6 flex items-center gap-2 text-sm font-semibold text-primary opacity-0 transition-all duration-300 group-hover:-translate-y-1 group-hover:opacity-100">
+                    View full details <ArrowRight className="h-4 w-4" />
+                  </div>
+                </a>
               )
             })}
           </div>
@@ -187,7 +139,7 @@ export function ServicesPage() {
       </section>
 
       <section className="border-y border-border bg-white/45 py-16 sm:py-20">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto w-full px-4 sm:px-6 lg:px-8">
           <SectionHeader
             eyebrow="Process"
             title="A calm build process from idea to usable product."
@@ -206,7 +158,7 @@ export function ServicesPage() {
       </section>
 
       <section className="py-16 sm:py-20">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto w-full px-4 sm:px-6 lg:px-8">
           <div className="grid gap-5 lg:grid-cols-[0.82fr_1fr]">
             <div className="rounded-lg border border-border bg-white/80 p-6 shadow-soft">
               <span className="grid h-12 w-12 place-items-center rounded-md bg-aqua text-cyan-900">

@@ -21,7 +21,7 @@ export function AboutPage() {
     <>
       <section className="relative overflow-hidden border-b border-border py-16 sm:py-20">
         <div className="absolute right-10 top-12 hidden h-32 w-32 rounded-full bg-mint/70 blur-3xl lg:block" />
-        <div className="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-[1fr_0.75fr] lg:px-8">
+        <div className="mx-auto grid w-full gap-10 px-4 sm:px-6 lg:grid-cols-[1fr_0.75fr] lg:px-8">
           <SectionHeader
             eyebrow="About DevStudio Labs"
             title="A creative development studio for students, founders, and modern teams."
@@ -51,7 +51,7 @@ export function AboutPage() {
       </section>
 
       <section className="py-16 sm:py-20">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto w-full px-4 sm:px-6 lg:px-8">
           <SectionHeader
             eyebrow="How we think"
             title="We treat every project like a small product."

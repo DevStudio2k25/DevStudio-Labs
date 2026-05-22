@@ -32,7 +32,7 @@ export function ProjectsPage() {
         <div className="absolute left-10 top-12 hidden h-28 w-28 rounded-full bg-mint/70 blur-3xl lg:block" />
         <div className="absolute bottom-10 right-16 hidden h-32 w-32 rounded-full bg-aqua/70 blur-3xl lg:block" />
 
-        <div className="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-[1fr_0.72fr] lg:px-8">
+        <div className="mx-auto grid w-full gap-10 px-4 sm:px-6 lg:grid-cols-[1fr_0.72fr] lg:px-8">
           <div>
             <div className="inline-flex items-center gap-2 rounded-md border border-primary/20 bg-white/75 px-3 py-2 text-sm font-semibold text-primary shadow-soft">
               <Sparkles className="h-4 w-4" />
@@ -70,7 +70,7 @@ export function ProjectsPage() {
 
       {featuredProject ? (
         <section id="featured-project" className="border-b border-border bg-white/45 py-16 sm:py-20">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="mx-auto w-full px-4 sm:px-6 lg:px-8">
             <div className="grid gap-6 lg:grid-cols-[0.95fr_1.05fr]">
               <div className="rounded-lg border border-border bg-white/80 p-6 shadow-soft">
                 <span
@@ -132,7 +132,7 @@ export function ProjectsPage() {
       ) : null}
 
       <section id="project-library" className="py-16 sm:py-20">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto w-full px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col justify-between gap-8 lg:flex-row lg:items-end">
             <SectionHeader
               eyebrow="Project library"

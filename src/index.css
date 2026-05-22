@@ -32,7 +32,7 @@
   }
 
   body {
-    @apply m-0 bg-background font-sans text-foreground antialiased;
+    @apply m-0 bg-background font-sans text-foreground antialiased select-none;
   }
 }
 

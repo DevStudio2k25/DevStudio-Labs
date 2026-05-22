@@ -6,7 +6,7 @@ import { buttonVariants } from '../components/ui/button'
 import { getProjectBySlug } from '../data/projects'
 import { cn } from '../lib/utils'
 
-const whatsappNumber = '910000000000'
+const whatsappNumber = '917073949813'
 
 const initialBrief = {
   name: '',
@@ -97,7 +97,7 @@ export function StartProjectPage() {
     <>
       <section className="relative overflow-hidden border-b border-border py-16 sm:py-20">
         <div className="absolute right-10 top-12 hidden h-32 w-32 rounded-full bg-mint/70 blur-3xl lg:block" />
-        <div className="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-[1fr_0.72fr] lg:px-8">
+        <div className="mx-auto grid w-full gap-10 px-4 sm:px-6 lg:grid-cols-[1fr_0.72fr] lg:px-8">
           <SectionHeader
             eyebrow="Start project"
             title="Fill the brief. We turn it into a clear WhatsApp message."
@@ -129,7 +129,7 @@ export function StartProjectPage() {
       </section>
 
       <section className="py-16 sm:py-20">
-        <div className="mx-auto grid max-w-7xl gap-6 px-4 sm:px-6 lg:grid-cols-[1fr_0.82fr] lg:px-8">
+        <div className="mx-auto grid w-full gap-6 px-4 sm:px-6 lg:grid-cols-[1fr_0.82fr] lg:px-8">
           <form
             className="rounded-lg border border-border bg-white/80 p-6 shadow-soft sm:p-8"
             onSubmit={handleSubmit}

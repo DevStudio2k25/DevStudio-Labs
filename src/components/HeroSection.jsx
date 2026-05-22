@@ -31,7 +31,7 @@ export function HeroSection() {
       <div className="absolute left-8 top-24 hidden h-28 w-28 rounded-full bg-mint/70 blur-3xl lg:block" />
       <div className="absolute bottom-10 right-12 hidden h-32 w-32 rounded-full bg-aqua/70 blur-3xl lg:block" />
 
-      <div className="mx-auto grid min-h-[calc(100vh-4rem)] w-full max-w-7xl items-center gap-12 px-4 py-16 sm:px-6 lg:grid-cols-[1fr_0.92fr] lg:px-8 lg:py-20">
+      <div className="mx-auto grid min-h-[calc(100vh-4rem)] w-full items-center gap-12 px-4 py-16 sm:px-6 lg:grid-cols-[1fr_0.92fr] lg:px-8 lg:py-20">
         <div className="relative z-10 max-w-3xl">
           <div className="inline-flex items-center gap-2 rounded-md border border-primary/20 bg-white/75 px-3 py-2 text-sm font-medium text-primary shadow-soft">
             <span className="h-2 w-2 rounded-full bg-primary" />

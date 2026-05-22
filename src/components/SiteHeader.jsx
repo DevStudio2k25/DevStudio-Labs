@@ -5,6 +5,7 @@ import { Button, buttonVariants } from './ui/button'
 import { cn } from '../lib/utils'
 
 const navItems = [
+  { label: 'Home', href: '/' },
   { label: 'Services', href: '/services' },
   { label: 'Projects', href: '/projects' },
   { label: 'About', href: '/about' },
@@ -35,7 +36,7 @@ export function SiteHeader() {
   return (
     <header className="sticky top-0 z-50 bg-background/75 backdrop-blur-2xl">
       <div className="pointer-events-none absolute inset-x-0 bottom-0 h-px bg-border" />
-      <div className="mx-auto flex h-[4.75rem] w-full max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto flex h-[4.75rem] w-full items-center justify-between px-4 sm:px-6 lg:px-8">
         <a
           href="/"
           className="group relative flex items-center gap-3 rounded-full bg-white/55 py-1.5 pl-1.5 pr-4 shadow-soft ring-1 ring-border transition-all duration-200 hover:-translate-y-0.5 hover:bg-white"

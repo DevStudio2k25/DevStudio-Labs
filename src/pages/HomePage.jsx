@@ -40,7 +40,7 @@ export function HomePage() {
       <HeroSection />
 
       <section className="border-b border-border bg-white/40 py-20">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto w-full px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col justify-between gap-8 lg:flex-row lg:items-end">
             <SectionHeader
               eyebrow="What we build"
@@ -72,7 +72,7 @@ export function HomePage() {
       </section>
 
       <section className="py-20">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto w-full px-4 sm:px-6 lg:px-8">
           <SectionHeader
             eyebrow="Featured work"
             title="Project previews that make the work feel real."
@@ -87,7 +87,7 @@ export function HomePage() {
       </section>
 
       <section className="pb-20">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto w-full px-4 sm:px-6 lg:px-8">
           <div className="rounded-lg border border-border bg-white/80 p-6 shadow-soft sm:p-8">
             <div className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
               <div className="max-w-2xl">
