@@ -1,0 +1,81 @@
+{
+  "id": "aegisvault-stealth-notes",
+  "slug": "aegisvault",
+  "audience": "students, privacy advocates, security engineers, developers",
+  "title": "AegisVault (StealthNotes)",
+  "category": "Stealth Encrypted Vault & Notes",
+  "status": "showcase",
+  "featured": true,
+  "hasAdminPanel": false,
+  "summary": "A stealth, offline-first notes application disguised as a normal productivity tool with an encrypted SQLCipher vault and gesture-based decoy pattern unlock.",
+  "overview": "AegisVault is an advanced Android security project written in Kotlin and Jetpack Compose. On the surface, it functions as a lightweight notes and document organizer. Beneath the unencrypted public layer lies a highly secure database (SQLCipher) and file vault encrypted with AES-256-CBC. Access is triggered completely invisibly through custom swipe gestures on a gateway note, offering robust plausible deniability.",
+  "longDescription": "Developed to address the growing demand for deep mobile privacy, AegisVault is a stealth-oriented notes and document security repository for Android. It operates as a dual-layer architecture: a fully functional, public note-taking layout (unencrypted SQLite via Room) that anyone can browse, and a hidden secure vault (SQLCipher database) accessible only through an invisible gesture pattern. The encryption keys are derived dynamically from the user's custom swipe pattern using PBKDF2 with 10,000 iterations, ensuring that no raw passphrases or keys are hardcoded in memory or storage. Additionally, it implements failed unlock attempt tracking, automatic lock on backgrounding, and an optional emergency panic wipe trigger. This is an exceptional reference project for students studying mobile cryptography, secure database access, and advanced custom canvas gestures in Jetpack Compose.",
+  "techStack": [
+    "Kotlin",
+    "Jetpack Compose",
+    "Material Design 3",
+    "SQLCipher (Encrypted Database)",
+    "Room Database (SQLite)",
+    "DataStore (Secure Preferences)",
+    "AES-256-CBC Cryptography",
+    "PBKDF2 Key Derivation",
+    "Compose Navigation",
+    "Coroutines & Flows",
+    "Biometric Prompt APIs",
+    "Failed Attempt Logger"
+  ],
+  "features": [
+    "Stealth Security Veil: Boring notes wrapper design carrying zero security branding to avoid user suspicion",
+    "Dual-Layer Database: Independent Room database for public notes alongside an AES-256 SQLCipher vault database",
+    "Invisible Gateway Note: Custom canvas monitoring swipe sequences invisibly over what looks like an empty notes pad",
+    "Dynamic PBKDF2 Passphrase: Advanced cryptographic key derivation utilizing 10,000 iterations from gesture hashes",
+    "Gesture Pattern Encoder: Robust gesture manager checking swipe directions, length thresholds, and consecutive boundaries",
+    "Failed Attempt Tracking: Dynamic system logging authentication attempts, triggering decoy messages or locker counts",
+    "Emergency Auto-Wipe: Smart security option allowing absolute deletion of the secure vault upon exceeding failed inputs",
+    "Local-First Architecture: Complete local storage operation requiring zero network permissions, preventing any packet leaks",
+    "Secure Memory Clearing: Cryptographic wrapper wiping active byte arrays and credentials instantly from system RAM after use",
+    "Material Design 3 Theme: Clean, modern Jetpack Compose theme featuring responsive typography, micro-animations, and layouts",
+    "Secure DataStore Preferences: Modern encrypted storage keeping track of gateway setups and failed attempt configurations"
+  ],
+  "deliverables": [
+    "Kotlin Android source code (Jetpack Compose, MVVM)",
+    "SQLCipher database configuration schemas",
+    "Cryptographic AES-256 helper classes",
+    "Invisible gesture pattern tracking canvas",
+    "Biometric login integration scripts",
+    "Complete compilation guide and presentation briefs"
+  ],
+  "media": {
+    "logo": "",
+    "thumbnail": "",
+    "cover": "",
+    "previewVideo": "",
+    "desktopScreenshots": [
+      { "label": "Mock Note Viewer Layout", "src": "" },
+      { "label": "Security Configurations Panel", "src": "" }
+    ],
+    "mobileScreenshots": [
+      { "label": "Public Notes Dashboard view", "src": "" },
+      { "label": "Invisible Gesture Gate Canvas", "src": "" },
+      { "label": "Encrypted Secure Vault workspace", "src": "" }
+    ]
+  },
+  "links": {
+    "demo": "",
+    "caseStudy": "/projects/aegisvault",
+    "github": "https://github.com/DevStudio-s-Unwanted-Repos/WorkSpace.git"
+  },
+  "amount": "Approx ₹8,500",
+  "timeline": "2-3 weeks",
+  "tags": [
+    "Android",
+    "Kotlin",
+    "Compose",
+    "Security",
+    "Encryption",
+    "SQLCipher",
+    "Stealth App",
+    "Plausible Deniability"
+  ],
+  "accent": "lime"
+}

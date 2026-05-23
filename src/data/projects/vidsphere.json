@@ -1,0 +1,84 @@
+{
+  "id": "vidsphere-video-streaming",
+  "slug": "vidsphere",
+  "audience": "students, content creators, media startups, mobile developers",
+  "title": "VidSphere (StreamTube)",
+  "category": "Video Sharing & Streaming Platform",
+  "status": "showcase",
+  "featured": true,
+  "hasAdminPanel": false,
+  "summary": "A complete mobile video-streaming and sharing platform built in Flutter and Firebase, featuring high-speed video players, local video compression engines, custom channel profiles, and content feed systems.",
+  "overview": "VidSphere (formerly fluttertube) is a modern, responsive video hub built with Flutter and Firebase. It mimics advanced systems like YouTube and TikTok, allowing users to watch videos, follow specific channels, search titles, react to posts, and upload their own videos. The core features a local video compression pipeline using video_compress to minimize network loads, Cloud Firestore to index channels and video feeds, and Firebase Storage for media asset delivery.",
+  "longDescription": "VidSphere is a production-grade multiplatform video streaming and channel management mobile solution built with Flutter and Dart. Engineered with a mobile-first focus, it leverages the video_player package for hardware-accelerated streaming, fl_chart for channel analytics views, and cached_network_image for rich cover art renders. A key architectural highlight is the offline video compression system that compresses raw camera recordings locally using video_compress before pushing them to Firebase Storage, saving up to 80% bandwidth. Real-time data binds are managed completely through Cloud Firestore, which handles dynamic video feeds, category tags, search filters, and channel subscription updates. This is the ultimate showcase project for students and media startup teams seeking to build highly interactive, media-rich mobile apps with zero server maintenance costs.",
+  "techStack": [
+    "Flutter",
+    "Dart",
+    "Cloud Firestore",
+    "Firebase Storage",
+    "Firebase Authentication",
+    "video_player",
+    "video_compress",
+    "image_picker",
+    "file_picker",
+    "fl_chart (Analytics)",
+    "cached_network_image",
+    "sizer (Responsive Layout)",
+    "shared_preferences",
+    "google_fonts (Inter)",
+    "connectivity_plus"
+  ],
+  "features": [
+    "Hardware Video Playback: Optimized streaming container supporting fluid frame renders, fullscreen viewports, and loaders",
+    "Local Video Compression: Automatic local compression reducing raw MP4/MOV files up to 80% before network uploads",
+    "Dynamic Video Feed: Firestore-driven scroll list showing latest uploads, category tags, views, and creator channel details",
+    "Creator Channel Workspace: Beautiful profile page showing total subscribers, uploaded lists, cover arts, and stats",
+    "Interactive Subscription Flow: Dynamic follow-channel toggles syncing subscriber counts instantly in Firestore",
+    "Full-Text Video Search: Dio-driven query filter matching video titles, descriptions, and tags across channels",
+    "Custom Upload Panel: Image picker and file picker workflows letting creators select custom covers and MP4 video briefs",
+    "Responsive Layout Scaling: Complete Sizer viewport integration adapting the grid for tablets and tall-screen devices",
+    "Media Assets Cloud Storage: Highly secure Firebase Storage rules managing video content uploads and creator thumbnails",
+    "Dynamic Charts Panel: Real-time channel analytics workspace showing engagement charts via fl_chart",
+    "Connectivity Monitor: Connectivity_plus alerts notifying user instantly on network drops or buffer delays"
+  ],
+  "deliverables": [
+    "Flutter application source code (Android, iOS, Web)",
+    "Firebase project configuration settings",
+    "Cloud Firestore database security rules",
+    "Local video compression wrappers",
+    "Interactive fl_chart dashboard widgets",
+    "Deployment manual and showcase documentation"
+  ],
+  "media": {
+    "logo": "",
+    "thumbnail": "",
+    "cover": "",
+    "previewVideo": "",
+    "desktopScreenshots": [
+      { "label": "Creator dashboard statistics", "src": "" },
+      { "label": "Video feed layout viewer", "src": "" }
+    ],
+    "mobileScreenshots": [
+      { "label": "Dynamic Player Feed Screen mobile", "src": "" },
+      { "label": "Channel Subscriptions Profile views", "src": "" },
+      { "label": "Video Upload Selector & Compressor", "src": "" }
+    ]
+  },
+  "links": {
+    "demo": "",
+    "caseStudy": "/projects/vidsphere",
+    "github": "https://github.com/Ankesh-Kumawat/fluttertube.git"
+  },
+  "amount": "Approx ₹11,000",
+  "timeline": "2-3 weeks",
+  "tags": [
+    "Streaming",
+    "Flutter",
+    "Dart",
+    "Firebase",
+    "Video Player",
+    "Firestore",
+    "Compression",
+    "Mobile App"
+  ],
+  "accent": "coral"
+}
