@@ -1,0 +1,80 @@
+{
+  "id": "cineverse-media-streaming",
+  "slug": "cineverse",
+  "audience": "students, media brands, film startups, mobile developers",
+  "title": "CineVerse (StreamHub)",
+  "category": "Movie & Anime Streaming Platform",
+  "status": "showcase",
+  "featured": true,
+  "hasAdminPanel": true,
+  "summary": "A flagship dark-themed Flutter movie and anime streaming application featuring Google Drive video integration, offline downloading, gesture controls, and a robust admin dashboard.",
+  "overview": "CineVerse is a production-grade streaming hub built with Flutter and Firebase. It features high-speed Google Drive video streaming integration, offline downloading with progress trackers, gesture-based volume/brightness players, next-episode autoplay countdowns, and a massive admin panel dashboard controlling maintenance states, notice banners, and app updates.",
+  "longDescription": "CineVerse is a highly-polished multiplatform media streaming solution designed with an immersive dark-themed glassmorphism interface. Engineered using Flutter, Provider state management, and Firebase, the application supports two robust layers: a high-engagement client streaming dashboard and a comprehensive admin management console. Clients can stream high-res videos hosted on Google Drive with advanced aspect ratio scaling and custom progress bar styles, while downloading episodes for offline viewing. Admins can moderate comments, push notice overlays, review reported issues, track user stats, and toggling global maintenance controls. This is the ultimate showcase project for mobile media product pitches and engineering presentations.",
+  "techStack": [
+    "Flutter",
+    "Dart",
+    "Cloud Firestore",
+    "Firebase Storage",
+    "Firebase Authentication",
+    "Provider (State Management)",
+    "ScreenUtil (Responsive UI)",
+    "SharedPreferences (Local Cache)",
+    "Cached Network Image",
+    "Screen Brightness API",
+    "Google Drive API Integration",
+    "Offline Downloader Engine"
+  ],
+  "features": [
+    "Google Drive Streamer: High-performance streaming container supporting Google Drive hosted MP4 links with automatic fallback modes",
+    "Offline Video Downloader: Background download manager saving video files locally with dynamic progress index bars",
+    "Advanced Gesture Player: Native-like gesture controls mapping in-player swipe actions for volume, brightness, and fast-forward seek",
+    "Next-Episode Autoplay: Configurable next-episode autoplay countdown timer (50-99%) overlaying player displays",
+    "Custom Progress Bars: Four select progress indicator designs (Classic, Modern, Minimal, Fancy) styled dynamically",
+    "Video Scaling Ratios: Multiple aspect ratios and zoom controls (Fit, Fill, Stretch, 16:9, 4:3, Original) managed in-player",
+    "Maintenance Mode Switcher: Admin-controlled server flag displaying custom maintenance blocks instantly to all clients",
+    "Notice Broadcast System: Administration board publishing custom updates, notices, and banners dynamically in-app",
+    "Community Chat Feed: Discussion post and comment sections letting users share and review anime episodes",
+    "Dynamic App Updater: Version comparison wrapper alerting users to update instantly when new releases are pushed"
+  ],
+  "deliverables": [
+    "Flutter streaming app source code (Android, iOS, Web, Windows)",
+    "Firebase database collection schema mappings",
+    "Custom video player customizer widgets",
+    "Offline background download controller",
+    "Admin dashboard panels and analytics views",
+    "Deployment and Firebase setup guide documentation"
+  ],
+  "media": {
+    "logo": "",
+    "thumbnail": "",
+    "cover": "",
+    "previewVideo": "",
+    "desktopScreenshots": [
+      { "label": "Admin analytics dashboard console", "src": "" },
+      { "label": "Notice management system view", "src": "" }
+    ],
+    "mobileScreenshots": [
+      { "label": "Home dashboard featured movies", "src": "" },
+      { "label": "Immersive video player workspace", "src": "" },
+      { "label": "Offline downloads progress panel", "src": "" }
+    ]
+  },
+  "links": {
+    "demo": "",
+    "caseStudy": "/projects/cineverse",
+    "github": "https://github.com/Ankesh-Kumawat/cineverse.git"
+  },
+  "amount": "Approx ₹9,500",
+  "timeline": "2-3 weeks",
+  "tags": [
+    "Streaming",
+    "Flutter",
+    "Dart",
+    "Firebase",
+    "Video Player",
+    "Google Drive",
+    "Admin Panel",
+    "Mobile App"
+  ],
+  "accent": "coral"
+}

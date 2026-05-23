@@ -1,0 +1,70 @@
+{
+  "id": "talktome-realtime-chat",
+  "slug": "talktome",
+  "audience": "students, designers, web developers, small teams",
+  "title": "TalkTome (Web Chat)",
+  "category": "Real-Time Web Chat Application",
+  "status": "showcase",
+  "featured": true,
+  "hasAdminPanel": false,
+  "summary": "A responsive room-based web chat application built in pure HTML, CSS, and Vanilla JavaScript, powered by Firebase Realtime Database and Authentication with glassmorphism UI.",
+  "overview": "TalkTome (formerly Teri Meri Baatein) is a real-time room-based web messaging platform. Developed using vanilla web technologies, it features custom welcome animations, floating action controllers, glassmorphic headers, message reply nodes, reactions, and responsive design for native-like mobile viewports.",
+  "longDescription": "TalkTome is an outstanding reference project for web developers looking to master asynchronous state synchronization without heavy frameworks. Built using semantic HTML5, modern flexbox/grid layout modules, and pure Vanilla JavaScript, it integrates directly with Firebase Realtime Database for sub-second text message delivery and presence checks. The frontend features glassmorphism layouts with backdrop-filter styles, dynamic user counters, animated welcome screens, and detailed reaction controls. It stands as a production-grade demonstration of highly responsive, client-side single page messaging workflows.",
+  "techStack": [
+    "HTML5 (Semantic Markup)",
+    "CSS3 (Gradients & Keyframes)",
+    "Vanilla JavaScript (ES6+)",
+    "Firebase Realtime Database",
+    "Firebase Authentication",
+    "Font Awesome Icons",
+    "Google Fonts (Inter)"
+  ],
+  "features": [
+    "Instant Real-Time Sync: Sub-second message delivery via Firebase Realtime Database listeners",
+    "Animated Intro Screens: Eye-catching fade-in transitions and welcoming graphics welcoming active users",
+    "Room Management Hub: High-performance room creation and joint controls via unique alphanumeric IDs",
+    "Dynamic Member Counter: Dynamic participant counting syncing active room members automatically",
+    "Glassmorphism Design: Beautiful backdrop-filter gradients and blurred overlays keeping layouts extremely modern",
+    "Contextual Message Reply: Touch-friendly long-press reply nodes connecting text references dynamically",
+    "Interactive Reactions: In-app reaction selector allowing members to tag messages with dynamic emojis",
+    "Mobile-First Scaling: Highly optimized CSS breakpoints offering native-app feel on mobile screens",
+    "Floating Action Triggers: Responsive footer inputs and floating action buttons keeping focus on messaging",
+    "Scroll Lock Management: Smart JS scroll locking keeping the message panel pinned to the latest text automatically"
+  ],
+  "deliverables": [
+    "Complete frontend source code (HTML, CSS, JS)",
+    "Firebase configuration and rules files",
+    "Interactive demo layout pages",
+    "Deploy guidance sheet for Firebase Hosting"
+  ],
+  "media": {
+    "logo": "",
+    "thumbnail": "",
+    "cover": "",
+    "previewVideo": "",
+    "desktopScreenshots": [
+      { "label": "Welcome login page web", "src": "" },
+      { "label": "Room dashboard messaging panel", "src": "" }
+    ],
+    "mobileScreenshots": [
+      { "label": "Mobile chat responsive view", "src": "" },
+      { "label": "Floating message reaction overlay", "src": "" }
+    ]
+  },
+  "links": {
+    "demo": "",
+    "caseStudy": "/projects/talktome",
+    "github": "https://github.com/Ankesh-Kumawat/Teri_Meri_Baatein-Privete_Chats.git"
+  },
+  "amount": "Approx ₹5,000",
+  "timeline": "2-3 weeks",
+  "tags": [
+    "Web",
+    "Vanilla JS",
+    "Firebase",
+    "Realtime",
+    "Chat Room",
+    "Glassmorphism"
+  ],
+  "accent": "mint"
+}

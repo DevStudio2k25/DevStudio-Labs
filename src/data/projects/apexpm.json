@@ -1,0 +1,77 @@
+{
+  "id": "apexpm-agile-manager",
+  "slug": "apexpm",
+  "audience": "students, startups, team leaders, product managers",
+  "title": "ApexPM (Agile Dashboard)",
+  "category": "Real-Time Team Project Manager",
+  "status": "showcase",
+  "featured": true,
+  "hasAdminPanel": true,
+  "summary": "A native Android team project management application built with Kotlin and Java, featuring real-time Firestore Kanban boards, profile achievements, and email-based invite flows.",
+  "overview": "ApexPM (formerly Your-PM-Project-Manager) is a comprehensive native Android software system designed to track team deliverables. Built with standard Android SDK, XML layouts, and dynamic Firebase integration, it supports real-time project creation, interactive board views, and a local code/document viewer. Team members can easily invite collaborators via email, configure profile dashboards, track achievements, and maintain files offline.",
+  "longDescription": "ApexPM is a production-grade, native Android collaborative system built for modern engineering teams and students. Developed with Kotlin and Java, the application connects directly to Cloud Firestore to sync task cards, boards, and project timelines across team devices instantly. Key architectural components include full-featured Firebase Authentication for secure profiles, offline connection fail-safes via NoInternet states, and an achievements activity to incentivize team tasks. The app also includes specialized modules like an integrated code and note viewer, making it an excellent dual-panel reference (Admin + User layout) for final-year presentations.",
+  "techStack": [
+    "Kotlin",
+    "Java",
+    "Android SDK",
+    "XML Layouts",
+    "Cloud Firestore",
+    "Firebase Authentication",
+    "Real-Time Sync",
+    "Achievements Engine",
+    "Code Viewer Component",
+    "Note Viewer Component",
+    "Offline Fail-safe Listeners"
+  ],
+  "features": [
+    "Kanban Board Sync: Real-time interactive drag-and-drop simulated task state updates connected directly to Firestore",
+    "Team Invitation Flow: Seamless email-based collaborator onboarding managing invitation lists",
+    "Achievements Dashboard: In-app engagement workspace celebrating team contributions",
+    "Dual-Panel Layout: Complete administration control flow mapped dynamically for managers and team members",
+    "Integrated Code Viewer: Offline-ready text viewer displaying custom source code briefs inside project cards",
+    "Rich Notes Viewer: Fully integrated documentation module letting members create and read project guides",
+    "Offline Detection Gate: Modern NoInternet detection screen pausing database streams gracefully",
+    "XML Material Layouts: Highly polished Android layout designs utilizing modern card structures and transitions",
+    "Secure Preferences: Gradle-configured local states holding session credentials securely",
+    "Firebase Firestore rules: Detailed document hierarchy restricting boards to verified invitees only"
+  ],
+  "deliverables": [
+    "Android Studio Kotlin & Java project source code",
+    "Firebase Firestore data structure guidelines",
+    "Dynamic achievements state widgets",
+    "Note and code viewer layouts",
+    "User manual and presentation project structures"
+  ],
+  "media": {
+    "logo": "",
+    "thumbnail": "",
+    "cover": "",
+    "previewVideo": "",
+    "desktopScreenshots": [
+      { "label": "Project detail boards overview", "src": "" },
+      { "label": "Task analytics charts view", "src": "" }
+    ],
+    "mobileScreenshots": [
+      { "label": "Android home board dashboard", "src": "" },
+      { "label": "Creator task details sheet", "src": "" },
+      { "label": "Team invite settings console", "src": "" }
+    ]
+  },
+  "links": {
+    "demo": "",
+    "caseStudy": "/projects/apexpm",
+    "github": "https://github.com/Ankesh-Kumawat/Your-PM-Project-Manager-.git"
+  },
+  "amount": "Approx ₹11,000",
+  "timeline": "2-3 weeks",
+  "tags": [
+    "Android",
+    "Kotlin",
+    "Java",
+    "Firebase",
+    "Project Management",
+    "Kanban",
+    "Firestore"
+  ],
+  "accent": "sky"
+}

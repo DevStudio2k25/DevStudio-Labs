@@ -1,0 +1,77 @@
+{
+  "id": "sayhi-realtime-messenger",
+  "slug": "sayhi",
+  "audience": "students, startups, developers, social media lovers",
+  "title": "SayHi (Chat & Feed)",
+  "category": "Real-Time Mobile Messenger",
+  "status": "showcase",
+  "featured": true,
+  "hasAdminPanel": false,
+  "summary": "A native Android messaging and social network application built with Java and Kotlin, featuring Firebase Cloud Messaging (FCM), interactive friend requests, user profiles, and a social feed.",
+  "overview": "SayHi is a real-time native Android messenger and community application. Built with Java, Kotlin, and Firebase, it combines instant chatting with social media elements: custom posts feed, advanced friend request workflows, profile setup panels, real-time typing indicators, and FCM push notifications.",
+  "longDescription": "SayHi is an exceptional mobile communication system engineered using native Android components. It connects directly to Firebase to manage user states, chat rooms, and a dynamic community feed. The application leverages Firebase Cloud Messaging (FCM) to deliver background push alerts with custom icons and colors, keeping users instantly updated. Security and social dynamics are handled through built-in sign-up flows, custom avatars, and a dedicated friend request interface. Designed as a real-time messaging prototype, it is highly polished and viva-ready for university presentations.",
+  "techStack": [
+    "Java",
+    "Kotlin",
+    "Android SDK",
+    "XML Layouts",
+    "Firebase Cloud Messaging (FCM)",
+    "Firebase Realtime Database",
+    "Firebase Authentication",
+    "Firebase Storage",
+    "SharedPreferences",
+    "Image Picker APIs",
+    "Failed Attempt Logger"
+  ],
+  "features": [
+    "Push Notification Service: Background message delivery and custom alerts using Firebase Cloud Messaging (FCM)",
+    "Friend Invitation System: Comprehensive friend request search, send, accept, and cancel flows with custom states",
+    "Social Posts Feed: Community workspace allowing users to create posts, manage feeds, and upload cover art",
+    "Interactive User Profiles: Customized avatars, dynamic bio updates, and profile setup grids during onboarding",
+    "Dynamic Search Panel: In-app user search engine indexing active members by email or username",
+    "Instant Chat Feeds: Real-time direct text messaging container using Firebase Realtime Database snap listeners",
+    "Soft-Keyboard AutoResize: Fluid window resize mechanics adjusting input panels automatically when typing",
+    "Material Layout Transitions: Polished native Android animations transitioning between main, sign-up, and chat boards",
+    "Multimedia Cloud Storage: Secure storage rules handling user avatar uploads and post-media attachments",
+    "Offline State Caching: Local caching storing recent chats and notifications to keep the app responsive"
+  ],
+  "deliverables": [
+    "Android Studio Java & Kotlin source code (gradle-ready)",
+    "Firebase Cloud Messaging service scripts",
+    "FCM push notification assets and templates",
+    "Firestore database structure documentation",
+    "User authentication and profile setups guide"
+  ],
+  "media": {
+    "logo": "",
+    "thumbnail": "",
+    "cover": "",
+    "previewVideo": "",
+    "desktopScreenshots": [
+      { "label": "Community post setup panel", "src": "" }
+    ],
+    "mobileScreenshots": [
+      { "label": "Splash loading screen native", "src": "" },
+      { "label": "Real-time messaging thread activity", "src": "" },
+      { "label": "Friend request management board", "src": "" }
+    ]
+  },
+  "links": {
+    "demo": "",
+    "caseStudy": "/projects/sayhi",
+    "github": "https://github.com/Ankesh-Kumawat/SayHi-Chat-App-.git"
+  },
+  "amount": "Approx ₹8,000",
+  "timeline": "2-3 weeks",
+  "tags": [
+    "Messaging",
+    "Android",
+    "Java",
+    "Kotlin",
+    "Firebase",
+    "FCM",
+    "Realtime",
+    "Mobile App"
+  ],
+  "accent": "aqua"
+}
