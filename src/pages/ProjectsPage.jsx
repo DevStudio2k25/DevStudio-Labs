@@ -60,10 +60,61 @@ export function ProjectsPage() {
             </div>
           </div>
 
-          <div className="grid gap-4 sm:grid-cols-3 lg:grid-cols-1">
-            <StatCard icon={Blocks} value={`${allProjects.length}+`} label="ready project concepts" />
-            <StatCard icon={Layers3} value={techCount} label="technologies covered" />
-            <StatCard icon={BadgeCheck} value={categories.length} label="project categories" />
+          <div className="rounded-lg border border-border bg-white/80 p-6 shadow-soft flex flex-col justify-between h-full">
+            <div>
+              <div className="flex items-center justify-between border-b border-border pb-4">
+                <div className="flex items-center gap-2.5">
+                  <span className="relative flex h-2.5 w-2.5">
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                    <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
+                  </span>
+                  <h2 className="font-semibold text-sm text-foreground">Lab Directory Status</h2>
+                </div>
+                <span className="rounded-md bg-muted px-2 py-1 text-[11px] font-semibold text-muted-foreground uppercase">
+                  Real-time
+                </span>
+              </div>
+
+              {/* Stats Grid */}
+              <div className="mt-6 grid grid-cols-3 gap-4">
+                <div className="text-center">
+                  <p className="text-3xl font-extrabold tracking-tight text-primary">{allProjects.length}+</p>
+                  <p className="mt-1 text-[11px] font-medium text-muted-foreground uppercase tracking-wider">Concepts</p>
+                </div>
+                <div className="text-center border-x border-border">
+                  <p className="text-3xl font-extrabold tracking-tight text-foreground">{techCount}</p>
+                  <p className="mt-1 text-[11px] font-medium text-muted-foreground uppercase tracking-wider">Tech Stacks</p>
+                </div>
+                <div className="text-center">
+                  <p className="text-3xl font-extrabold tracking-tight text-foreground">{categories.length}</p>
+                  <p className="mt-1 text-[11px] font-medium text-muted-foreground uppercase tracking-wider">Categories</p>
+                </div>
+              </div>
+
+              {/* Active Categories Tags */}
+              <div className="mt-6 border-t border-border pt-4">
+                <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wide">Active Categories</p>
+                <div className="mt-3 flex flex-wrap gap-1.5">
+                  {categories.map((category) => (
+                    <span key={category} className="rounded-md bg-background border border-border px-2.5 py-1 text-xs font-semibold text-foreground">
+                      {category}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            {/* Core Tech Stack Icons */}
+            <div className="mt-6 border-t border-border pt-4">
+              <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wide">Featured Stacks</p>
+              <div className="mt-3 flex flex-wrap gap-1.5">
+                {['React', 'Next.js', 'Flutter', 'Firebase', 'Supabase', 'Gemini AI', 'Tailwind'].map((tech) => (
+                  <span key={tech} className="rounded-md bg-mint/55 text-emerald-950 px-2 py-0.5 text-xs font-medium">
+                    {tech}
+                  </span>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </section>

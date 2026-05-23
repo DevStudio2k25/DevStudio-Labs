@@ -1,0 +1,85 @@
+{
+  "id": "mentorhub-academic-management",
+  "slug": "mentorhub",
+  "audience": "students, mentors, academic administrators, colleges, universities",
+  "title": "MentorHub",
+  "category": "Academic Management Portal",
+  "status": "showcase",
+  "featured": true,
+  "hasAdminPanel": false,
+  "summary": "An all-in-one portal connecting mentors and mentees to streamline project guidance, report submissions, academic queries, and interactive sessions.",
+  "overview": "MentorHub is a robust Next.js application designed to bridge the gap between college mentors and students. By integrating Firebase Auth, Realtime Database, and Cloud Storage, it provides a secure, role-based platform where administrators manage users, mentors schedule classes and review project reports, and mentees upload assignments, submit queries, and join guidance sessions.",
+  "longDescription": "Designed as a comprehensive college project management platform, MentorHub streamlines the administrative and collaborative aspects of mentor-mentee groups. Students can submit progress reports, ask academic queries, schedule 1-on-1 sessions, and upload deliverables. Mentors gain access to a dedicated suite of tools to manage mentee profiles, track project reports, coordinate classes, and resolve queries. Administrators have absolute control over user onboarding, role management, and database assignment. Packed with premium dashboard analytics (using Recharts) and robust document generation features (PDF and Excel exports), it transforms academic project guidance into a structured, trackable, and highly productive experience.",
+  "techStack": [
+    "Next.js (App Router)",
+    "React 19",
+    "Firebase Auth",
+    "Firebase Realtime Database",
+    "Firebase Cloud Storage",
+    "Tailwind CSS & Shadcn UI",
+    "TypeScript",
+    "Recharts (Data Visualization)",
+    "jsPDF / jsPDF-autotable",
+    "XLSX (Excel Export)",
+    "EmailJS",
+    "React Hook Form & Zod"
+  ],
+  "features": [
+    "Role-Based Dashboards: Dedicated secure dashboard layouts custom-tailored for Admins, Mentors, and Mentees",
+    "Digital Portfolio Tracker: Structured mentee portal to upload and submit academic progress and milestone reports",
+    "Evaluation Panel: Advanced mentor suite to audit, review, comment, and grade submitted student reports",
+    "Interactive Query Board: Real-time discussion forum for students to ask academic queries and mentors to answer them",
+    "Attendance & Classroom Manager: Automated log logs for mentors to track class schedules and student attendance on-the-go",
+    "Meeting Coordination Engine: Built-in calendar scheduling tool to organize 1-on-1 progress guidance sessions",
+    "Recharts Visual Analytics: Beautiful telemetry charts rendering student grades, query resolutions, and attendance trends",
+    "jsPDF Document compiler: Custom script compiling and exporting clean PDF reports, attendance logs, and student evaluations",
+    "XLSX Dynamic Sheets: Seamless spreadsheet integration allowing admins to import student rosters and export logs",
+    "EmailJS Alerts: Automated email dispatch systems notifying users instantly of meeting schedules or resolved queries",
+    "Mobile-First Sidebar Drawer: Responsive slide-in navigation panel designed for effortless smartphone browsing",
+    "Tailwind Dark Mode: Premium light & dark theme switching built completely with Tailwind transition animations"
+  ],
+  "deliverables": [
+    "Next.js Web Portal Source Code",
+    "Firebase Security Rules Configuration",
+    "Realtime Database & Storage Architecture Schema",
+    "Admin Dashboard Panel",
+    "Mentor guidance & evaluation suite",
+    "Mentee portfolio submission flow",
+    "Project documentation report & slides template",
+    "Deployment & environment setup support"
+  ],
+  "media": {
+    "logo": "",
+    "thumbnail": "",
+    "cover": "",
+    "previewVideo": "",
+    "desktopScreenshots": [
+      { "label": "Admin user management panel", "src": "" },
+      { "label": "Mentor tracking & report validation", "src": "" },
+      { "label": "Mentee submission portal", "src": "" }
+    ],
+    "mobileScreenshots": [
+      { "label": "Mobile dashboard", "src": "" },
+      { "label": "Submit report drawer", "src": "" },
+      { "label": "Active sessions log", "src": "" }
+    ]
+  },
+  "links": {
+    "demo": "",
+    "caseStudy": "/projects/mentorhub",
+    "github": "https://github.com/DevStudio-s-Unwanted-Repos/MentorHub.git"
+  },
+  "amount": "Approx ₹14,500",
+  "timeline": "2-3 weeks",
+  "tags": [
+    "Academic",
+    "Next.js",
+    "Firebase",
+    "Management System",
+    "Portal",
+    "React",
+    "Analytics",
+    "Education"
+  ],
+  "accent": "sky"
+}

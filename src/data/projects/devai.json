@@ -1,0 +1,84 @@
+{
+  "id": "devai-prompt-generator",
+  "slug": "devai",
+  "audience": "students, developers, startup founders, software engineers",
+  "title": "DevAi",
+  "category": "AI Prompt & Project Generator",
+  "status": "showcase",
+  "featured": true,
+  "hasAdminPanel": true,
+  "summary": "An AI-powered development blueprint generator using Gemini AI, featuring a token system, community feed, and both Admin & User dashboards.",
+  "overview": "DevAi is an innovative Flutter application that leverages Google's Gemini AI to help developers generate comprehensive project specifications, folder structures, and development roadmaps. It features secure Google Sign-In, a secure DevToken ecosystem, a promo code generator, YouTube watch-to-earn features, and dual Admin and Client panels.",
+  "longDescription": "DevAi bridges the gap between raw project ideas and structured execution plans. Users can generate highly detailed 10-phase project specifications (including overview, architecture, design systems, recommended packages, test plans, and roadmaps) streamed in real-time. The built-in token system prevents API abuse and is completely managed by an integrated Admin Panel. Mapped across Firebase services (Auth, Firestore, Storage), the ecosystem contains both a premium Client User App (to redeem promo codes, watch tutorials, and share project specs in the community feed) and an Admin Control Panel where admins can onboard YouTube videos, generate and audit promo codes, configure Gemini API keys, and monitor registered user logs. DevAi is the ultimate production-ready tool for academic demonstrations or actual SaaS MVPs.",
+  "techStack": [
+    "Flutter",
+    "Dart",
+    "Google Gemini API (Generative AI)",
+    "Firebase Auth",
+    "Cloud Firestore",
+    "Google Sign-In",
+    "Provider (State Management)",
+    "Shared Preferences & Secure Storage",
+    "flutter_animate",
+    "Lottie Animations",
+    "http (API calls)",
+    "path_provider"
+  ],
+  "features": [
+    "Dual-Panel SaaS Ecosystem: Fully segregated Admin Control Console & Client User App layouts mapped dynamically via Firebase",
+    "Gemini 2.0 Streaming Engine: Real-time 10-phase software blueprint generation streamed character-by-character using Gemini API",
+    "Secure Token Economy: Fully managed DevTokens architecture deducting balances on successful blueprint generations",
+    "Admin Promo Code Module: Automated promo-code generation dashboard verifying date expirations and single-use constraints",
+    "YouTube Watch-to-Earn: Interactive video player rewarding users with custom token increments upon tutorial completion",
+    "Animated Leaderboard Feed: Multi-color glowing rank indicators sorting the community's top creators in real-time",
+    "Public Community Feed: Shared directory letting developers browse, read, like, and download other users' generated blueprints",
+    "Secure Device Binding: Asynchronous client-side checks ensuring one active session/device per Google account",
+    "Material Design 3 Layouts: Premium, ultra-responsive design system built entirely around standard MD3 guidelines",
+    "Personal History Index: Infinite-scroll dashboard tracking personal project blueprints with smooth swipe-to-delete",
+    "Shimmer Loading Telemetry: Responsive skeleton screens keeping the viewport highly interactive during multi-phase generations",
+    "Secure Local Storage: Asynchronous on-device encryption saving API keys and system settings using secure storage adapters"
+  ],
+  "deliverables": [
+    "Flutter Client App source code (Android, iOS, Web, Windows)",
+    "Admin Control Panel configuration dashboard",
+    "Firebase Security Rules & Firestore Database schemas",
+    "Promo code and YouTube link management modules",
+    "Gemini AI connection adapters",
+    "Project report & architectural slides layout",
+    "Step-by-step local installation guide"
+  ],
+  "media": {
+    "logo": "",
+    "thumbnail": "",
+    "cover": "",
+    "previewVideo": "",
+    "desktopScreenshots": [
+      { "label": "Admin analytics dashboard", "src": "" },
+      { "label": "Promo code generation console", "src": "" },
+      { "label": "Community shared blueprint feed", "src": "" }
+    ],
+    "mobileScreenshots": [
+      { "label": "Interactive project generator form", "src": "" },
+      { "label": "DevTokens watch-and-earn catalog", "src": "" },
+      { "label": "10-phase generative blueprint screen", "src": "" }
+    ]
+  },
+  "links": {
+    "demo": "",
+    "caseStudy": "/projects/devai",
+    "github": "https://github.com/Anni-s-Apps/DevAi-User.git"
+  },
+  "amount": "Approx ₹12,000",
+  "timeline": "2-3 weeks",
+  "tags": [
+    "AI",
+    "Flutter",
+    "Dart",
+    "Gemini AI",
+    "SaaS",
+    "Admin Panel",
+    "Token Economy",
+    "Firebase"
+  ],
+  "accent": "aqua"
+}

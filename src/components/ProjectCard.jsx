@@ -17,14 +17,21 @@ export function ProjectCard({ project }) {
       className="group flex h-full flex-col rounded-lg border border-border bg-white/80 p-4 shadow-soft transition-all duration-200 hover:-translate-y-1 hover:border-primary/35"
     >
       <div className="flex items-start justify-between gap-4">
-        <span
-          className={cn(
-            'rounded-md px-2.5 py-1 text-xs font-semibold',
-            accentClasses[project.accent] ?? accentClasses.mint,
+        <div className="flex flex-wrap gap-1.5">
+          <span
+            className={cn(
+              'rounded-md px-2.5 py-1 text-xs font-semibold',
+              accentClasses[project.accent] ?? accentClasses.mint,
+            )}
+          >
+            {project.category}
+          </span>
+          {project.hasAdminPanel && (
+            <span className="inline-flex items-center gap-1 rounded-md bg-emerald-50 px-2 py-1 text-xs font-semibold text-emerald-700 border border-emerald-200">
+              Admin + User
+            </span>
           )}
-        >
-          {project.category}
-        </span>
+        </div>
         <ArrowUpRight className="h-4 w-4 text-muted-foreground transition-colors group-hover:text-primary" />
       </div>
 

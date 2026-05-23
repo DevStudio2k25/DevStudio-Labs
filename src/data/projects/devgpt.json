@@ -1,0 +1,85 @@
+{
+  "id": "devgpt-ai-assistant",
+  "slug": "devgpt",
+  "audience": "students, developers, AI enthusiasts, designers, creators",
+  "title": "DevGPT (ArkAI)",
+  "category": "AI Assistant & Image Generator",
+  "status": "showcase",
+  "featured": true,
+  "hasAdminPanel": false,
+  "summary": "A fully-featured ChatGPT-like cross-platform mobile application built with Flutter, featuring streaming AI responses, offline-first local storage, and simulated text-to-image painting modes.",
+  "overview": "DevGPT (ArkAI) is a beautiful, platform-adaptive assistant app built with Flutter. It delivers real-time streaming chatbot replies with typing animations, offline conversation histories powered by Hive local storage, and swipe gesture controls to manage, pin, or delete chats. It also includes an image generation mode to render custom illustrations directly in-chat.",
+  "longDescription": "Designed to mimic premium applications like ChatGPT and Midjourney, DevGPT (ArkAI) is an offline-first, highly animated Flutter application for Android, iOS, and Windows. The app leverages adaptive UI controls to render material design on Android and native Cupertino mechanics on iOS. Users can create unlimited conversations, search through historical records, and pin critical boards to the top. The built-in assistant supports rich Markdown text rendering, custom code blocks, and dynamic shimmer loading skeletons. Additionally, users can toggle into an Image Generator layout that simulates text-to-image prompts across multiple artistic styles. Designed for students and developers alike, it is the perfect template to connect OpenAI, Google Gemini, or Claude APIs to a production-grade front end.",
+  "techStack": [
+    "Flutter",
+    "Dart",
+    "Hive DB (Local Storage)",
+    "SharedPreferences",
+    "Firebase Core",
+    "Firebase Auth",
+    "Google Sign-In",
+    "flutter_animate",
+    "google_fonts (Inter)",
+    "flutter_markdown",
+    "shimmer",
+    "image_picker",
+    "HTTP Client"
+  ],
+  "features": [
+    "Streaming AI Engine: Real-time artificial intelligence chat responses displaying fluid typing animations and tokens streaming",
+    "Offline-First Architecture: Complete local-first execution requiring zero user login and zero active backend costs",
+    "Hive Database Core: Lightning-fast local NoSQL database indexing chat history, pinned topics, and image records",
+    "Text-to-Image Canvas: Integrated illustration workspace rendering dynamic simulated image generations from text prompts",
+    "Artistic Style Filters: Intuitive design selectors to choose specific artistic styles (Anime, Cyberpunk, Cinematic, Sketch) for paint prompts",
+    "Platform Adaptive UI: Custom widget framework rendering native Material Design 3 on Android/Windows and native Cupertino on iOS",
+    "Interactive Swipe Gestures: Advanced swipe-to-pin and swipe-to-delete conversation mechanics mapped completely in-list",
+    "Markdown Rich-Text: High-performance parser rendering headings, bullet lists, custom margins, and code block boxes in chat",
+    "Shimmer Skeleton States: Beautiful glassmorphic shimmer loaders keeping the screen alive during simulated inference",
+    "Advanced Local Search: High-speed full-text query search bar indexing past conversations and historical logs instantly",
+    "Branding Theme Engine: Premium dark and light mode toggle layouts utilizing custom color-gradient backdrops",
+    "Secure Key Configuration: In-app management console letting users encrypt, input, or wipe custom Google Gemini or OpenAI API keys"
+  ],
+  "deliverables": [
+    "Flutter app source code (Android, iOS, Windows, Web)",
+    "Local Hive database configurations",
+    "State management & animations engine",
+    "Adaptive UI layout framework assets",
+    "API integration guide (OpenAI / Gemini / Claude)",
+    "Project documentation & college presentation slide layouts",
+    "Local build and compilation support"
+  ],
+  "media": {
+    "logo": "",
+    "thumbnail": "",
+    "cover": "",
+    "previewVideo": "",
+    "desktopScreenshots": [
+      { "label": "Chat dashboard", "src": "" },
+      { "label": "Image generation engine view", "src": "" },
+      { "label": "Preferences and settings", "src": "" }
+    ],
+    "mobileScreenshots": [
+      { "label": "Main assistant chatbot mobile", "src": "" },
+      { "label": "Conversations swipe drawer", "src": "" },
+      { "label": "Text-to-Image prompt customizer", "src": "" }
+    ]
+  },
+  "links": {
+    "demo": "",
+    "caseStudy": "/projects/devgpt",
+    "github": "https://github.com/Anni-s-Apps/DevGPT.git"
+  },
+  "amount": "Approx ₹6,500",
+  "timeline": "2-3 weeks",
+  "tags": [
+    "AI",
+    "Flutter",
+    "Dart",
+    "Chatbot",
+    "Image Generation",
+    "Hive DB",
+    "Mobile App",
+    "Offline First"
+  ],
+  "accent": "coral"
+}

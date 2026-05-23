@@ -21,6 +21,7 @@ const initialBrief = {
   details: '',
   hasReferences: false,
   references: '',
+  needPPT: false,
 }
 
 const projectTypes = [
@@ -124,6 +125,53 @@ export function StartProjectPage() {
                 </div>
               ))}
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-white/45 border-b border-border py-12">
+        <div className="mx-auto w-[92vw] max-w-[100rem] px-0">
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+            
+            <div className="rounded-lg border border-border bg-white p-5 shadow-soft">
+              <span className="text-xs font-semibold uppercase tracking-wide text-primary">Tier 1: Basic Customization</span>
+              <h3 className="mt-2 text-xl font-bold text-foreground">₹4,000 - ₹6,000</h3>
+              <p className="mt-2 text-xs leading-5 text-muted-foreground">
+                Simple landing pages, portfolio websites, offline mobile app interfaces, and minor academic projects.
+              </p>
+            </div>
+
+            <div className="rounded-lg border border-border bg-white p-5 shadow-soft">
+              <span className="text-xs font-semibold uppercase tracking-wide text-primary">Tier 2: Intermediate SaaS</span>
+              <h3 className="mt-2 text-xl font-bold text-foreground">₹8,000 - ₹11,000</h3>
+              <p className="mt-2 text-xs leading-5 text-muted-foreground">
+                Dynamic databases (Supabase, Firebase), user accounts, basic API tools, and multi-screen apps (like DevStudio & DevGPT).
+              </p>
+            </div>
+
+            <div className="rounded-lg border border-border bg-white p-5 shadow-soft">
+              <span className="text-xs font-semibold uppercase tracking-wide text-primary">Tier 3: Flagship Enterprise</span>
+              <h3 className="mt-2 text-xl font-bold text-foreground">₹12,000 - ₹15,000+</h3>
+              <p className="mt-2 text-xs leading-5 text-muted-foreground">
+                Role-based administrative dashboards, dynamic PDF generation, Recharts analytics, and complex web apps (like MentorHub).
+              </p>
+            </div>
+
+            <div className="rounded-lg border border-primary/20 bg-mint/45 p-5 shadow-soft flex flex-col justify-between">
+              <div>
+                <span className="inline-flex items-center gap-1.5 rounded-full bg-primary/10 px-2.5 py-0.5 text-xs font-semibold text-primary">
+                  💡 Flexible Budget
+                </span>
+                <h3 className="mt-2.5 text-sm font-semibold text-emerald-950">Worried about the cost?</h3>
+                <p className="mt-1 text-xs leading-5 text-emerald-950/70">
+                  Talk to us! We can adjust the features to match your exact budget, or recommend an excellent alternative project that fits your budget.
+                </p>
+              </div>
+              <a href="https://wa.me/917073949813?text=Hi%20DevStudio%20Labs%2C%20I%20want%20to%20discuss%20a%20project%20in%20my%20custom%20budget." target="_blank" rel="noreferrer" className="mt-4 text-xs font-bold text-primary hover:underline inline-flex items-center gap-1">
+                Direct WhatsApp Chat &rarr;
+              </a>
+            </div>
+
           </div>
         </div>
       </section>
@@ -275,6 +323,40 @@ export function StartProjectPage() {
               ) : null}
             </div>
 
+            <div className="mt-4 rounded-lg border border-border bg-white/70 p-4 shadow-soft">
+              <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+                <div>
+                  <p className="text-sm font-semibold text-foreground">
+                    Presentation (PPT) Add-on
+                  </p>
+                  <p className="mt-1 text-xs leading-5 text-muted-foreground">
+                    Do you want us to design a premium, viva-ready presentation deck? (Fixed charge of +₹1,500)
+                  </p>
+                </div>
+                <div className="grid w-full grid-cols-2 rounded-md border border-border bg-background p-1 sm:w-40">
+                  {[
+                    { label: 'No', value: false },
+                    { label: 'Yes', value: true },
+                  ].map((option) => (
+                    <button
+                      key={option.label}
+                      type="button"
+                      className={cn(
+                        'h-9 rounded-sm text-sm font-semibold transition-all',
+                        brief.needPPT === option.value
+                          ? 'bg-primary text-primary-foreground shadow-glow'
+                          : 'text-muted-foreground hover:bg-white hover:text-foreground',
+                      )}
+                      aria-pressed={brief.needPPT === option.value}
+                      onClick={() => updateBrief('needPPT', option.value)}
+                    >
+                      {option.label}
+                    </button>
+                  ))}
+                </div>
+              </div>
+            </div>
+
             <div className="mt-6 flex flex-col gap-3 sm:flex-row">
               <button type="button" className={cn(buttonVariants({ variant: 'outline' }), 'w-full sm:w-fit')} onClick={copyMessage}>
                 {copied ? <Check className="h-4 w-4" /> : <Clipboard className="h-4 w-4" />}
@@ -335,6 +417,8 @@ Reference links:
 ${value(brief.references)}`
     : ''
 
+  const pptLine = brief.needPPT ? `\nPresentation (PPT) Add-on: Yes (+ ₹1,500 fixed charge)` : `\nPresentation (PPT) Add-on: No`
+
   return `Hi DevStudio Labs,
 
 I want to start a project. Here are my details:
@@ -344,7 +428,7 @@ ${contactLines.join('\n')}
 Project type: ${value(brief.projectType)}
 Budget range: ${value(brief.budget)}
 Timeline: ${brief.timeline === 'Custom timeline' ? value(brief.customTimeline) : value(brief.timeline)}
-Project title / idea: ${value(brief.title)}
+Project title / idea: ${value(brief.title)}${pptLine}
 
 Project details:
 ${value(brief.details)}${referenceSection}

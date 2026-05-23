@@ -6,9 +6,10 @@
   "category": "Learning Platform",
   "status": "showcase",
   "featured": true,
+  "hasAdminPanel": true,
   "summary": "A modern platform to learn app development, explore AI tools, prompts, wallpapers, and creator resources.",
-  "overview": "DevStudio is a modern learning platform designed for developers, creators, and students who want to learn app development, discover useful AI tools, access prompt libraries, explore resources, and improve their creative workflow through curated content and interactive learning.",
-  "longDescription": "DevStudio is an all-in-one platform focused on learning, creativity, and developer resources. The platform provides educational content related to app development, AI workflows, Flutter projects, website building, and content creation. Users can explore curated AI tools, prompt collections, development resources, YouTube learning content, wallpaper collections, and creator utilities in one place. The goal of DevStudio is to help beginners and creators learn faster, build smarter projects, and access useful resources without searching everywhere. The platform also includes modern UI sections, organized learning modules, creator-focused utilities, and downloadable assets for developers and content creators.",
+  "overview": "DevStudio is a modern cross-platform learning and asset platform designed for developers, creators, and students. Built with Flutter, it features comprehensive Android and Desktop builds for both Client and Admin environments to manage learning modules, AI prompt tools, and creative wallpapers.",
+  "longDescription": "DevStudio is a high-fidelity cross-platform application focused on app development learning, creativity, and developer resources. Built on a single Flutter codebase, it compiles into native Android and Desktop applications for both the end-user client and the administrator panel. End-users can explore curated AI tools, copy system prompts, watch YouTube learning content, purchase wallpapers, and bookmark resources. Meanwhile, the integrated Admin panel gives administrators absolute control on both desktop and mobile platforms to upload new prompt cards, manage wallpaper databases (via Cloudinary), track analytics, and moderate user feedback. It features modern UI sections, smooth animations, and is fully integrated with Firebase Auth and Supabase databases.",
   "techStack": [
     "Flutter",
     "Dart",
@@ -20,28 +21,27 @@
     "Provider / State Management"
   ],
   "features": [
-    "AI tools collection",
-    "Prompt library",
-    "Flutter learning resources",
-    "YouTube tutorials section",
-    "Wallpaper store",
-    "Developer resources",
-    "Project showcase",
-    "Modern responsive UI",
-    "Content categories",
-    "Bookmarks and favorites",
-    "Search functionality",
-    "Creator utilities"
+    "Dual Platforms: Fully compiled native Android and Desktop applications for both end-users and administrators from a single codebase",
+    "Dynamic Asset Store: High-resolution wallpapers collection with smooth asynchronous asset loading and downloads",
+    "AI Prompt Library: Curated collection of production-ready developer prompts with quick copy-to-clipboard functionality",
+    "Curated AI Tools Hub: Organized catalog of state-of-the-art AI utilities with external redirection hooks",
+    "Interactive YouTube Tutorials: In-app educational tutorial feeds synced dynamically using YouTube API payloads",
+    "Supabase Database Sync: Real-time cloud database storage syncing bookmarks, bookmarks, and user activities instantly",
+    "Cloudinary Media Delivery: Ultra-fast CDN media storage optimization delivering sharp wallpapers and icon assets at 60fps",
+    "Creator Utilities Suite: Built-in design systems and code helpers engineered specifically for beginner developers",
+    "Premium Glassmorphic UI: Responsive interface built with custom frosted blur elements and fluid micro-interactions",
+    "Global Search & Tags: Advanced full-text query algorithms sorting developer resources by category and tag filters",
+    "Asynchronous Local Cache: Secure offline bookmarks and history storage using local memory adapters"
   ],
   "deliverables": [
-    "Flutter app source code",
-    "Firebase Auth setup",
-    "Supabase realtime database setup",
+    "Flutter app source code (Client + Admin)",
+    "Firebase Auth & Security setup rules",
+    "Supabase database design schemas",
     "Cloudinary media storage setup",
-    "Android app UI screens",
-    "Desktop app UI screens",
-    "Project documentation",
-    "Deployment support"
+    "Android app packages (User & Admin)",
+    "Desktop app packages (User & Admin)",
+    "Project documentation report & presentations layout",
+    "Deployment & local build support"
   ],
   "media": {
     "logo": "/images/projects/devstudio.png",
@@ -64,8 +64,8 @@
     "caseStudy": "/projects/devstudio",
     "github": ""
   },
-  "amount": "Approx ₹8,000",
-  "timeline": "10-20 days",
+  "amount": "Approx ₹9,500",
+  "timeline": "2-3 weeks",
   "tags": [
     "Learning",
     "Flutter",
