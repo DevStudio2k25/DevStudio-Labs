@@ -3,7 +3,7 @@
   "slug": "apexpm",
   "audience": "students, startups, team leaders, product managers",
   "title": "ApexPM (Agile Dashboard)",
-  "category": "Real-Time Team Project Manager",
+  "category": "Mobile Apps (Flutter & Native)",
   "status": "showcase",
   "featured": true,
   "hasAdminPanel": true,
@@ -48,13 +48,28 @@
     "cover": "",
     "previewVideo": "",
     "desktopScreenshots": [
-      { "label": "Project detail boards overview", "src": "" },
-      { "label": "Task analytics charts view", "src": "" }
+      {
+        "label": "Project detail boards overview",
+        "src": ""
+      },
+      {
+        "label": "Task analytics charts view",
+        "src": ""
+      }
     ],
     "mobileScreenshots": [
-      { "label": "Android home board dashboard", "src": "" },
-      { "label": "Creator task details sheet", "src": "" },
-      { "label": "Team invite settings console", "src": "" }
+      {
+        "label": "Android home board dashboard",
+        "src": ""
+      },
+      {
+        "label": "Creator task details sheet",
+        "src": ""
+      },
+      {
+        "label": "Team invite settings console",
+        "src": ""
+      }
     ]
   },
   "links": {

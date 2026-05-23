@@ -3,7 +3,7 @@
   "slug": "aegisvault",
   "audience": "students, privacy advocates, security engineers, developers",
   "title": "AegisVault (StealthNotes)",
-  "category": "Stealth Encrypted Vault & Notes",
+  "category": "Security & Utilities",
   "status": "showcase",
   "featured": true,
   "hasAdminPanel": false,
@@ -51,13 +51,28 @@
     "cover": "",
     "previewVideo": "",
     "desktopScreenshots": [
-      { "label": "Mock Note Viewer Layout", "src": "" },
-      { "label": "Security Configurations Panel", "src": "" }
+      {
+        "label": "Mock Note Viewer Layout",
+        "src": ""
+      },
+      {
+        "label": "Security Configurations Panel",
+        "src": ""
+      }
     ],
     "mobileScreenshots": [
-      { "label": "Public Notes Dashboard view", "src": "" },
-      { "label": "Invisible Gesture Gate Canvas", "src": "" },
-      { "label": "Encrypted Secure Vault workspace", "src": "" }
+      {
+        "label": "Public Notes Dashboard view",
+        "src": ""
+      },
+      {
+        "label": "Invisible Gesture Gate Canvas",
+        "src": ""
+      },
+      {
+        "label": "Encrypted Secure Vault workspace",
+        "src": ""
+      }
     ]
   },
   "links": {

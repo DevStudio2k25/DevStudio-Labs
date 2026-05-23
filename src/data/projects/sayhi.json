@@ -3,7 +3,7 @@
   "slug": "sayhi",
   "audience": "students, startups, developers, social media lovers",
   "title": "SayHi (Chat & Feed)",
-  "category": "Real-Time Mobile Messenger",
+  "category": "Mobile Apps (Flutter & Native)",
   "status": "showcase",
   "featured": true,
   "hasAdminPanel": false,
@@ -48,12 +48,24 @@
     "cover": "",
     "previewVideo": "",
     "desktopScreenshots": [
-      { "label": "Community post setup panel", "src": "" }
+      {
+        "label": "Community post setup panel",
+        "src": ""
+      }
     ],
     "mobileScreenshots": [
-      { "label": "Splash loading screen native", "src": "" },
-      { "label": "Real-time messaging thread activity", "src": "" },
-      { "label": "Friend request management board", "src": "" }
+      {
+        "label": "Splash loading screen native",
+        "src": ""
+      },
+      {
+        "label": "Real-time messaging thread activity",
+        "src": ""
+      },
+      {
+        "label": "Friend request management board",
+        "src": ""
+      }
     ]
   },
   "links": {

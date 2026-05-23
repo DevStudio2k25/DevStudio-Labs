@@ -3,7 +3,7 @@
   "slug": "devstudio",
   "audience": "students, developers, creators, beginners, content creators",
   "title": "DevStudio",
-  "category": "Learning Platform",
+  "category": "Security & Utilities",
   "status": "showcase",
   "featured": true,
   "hasAdminPanel": true,
@@ -49,14 +49,32 @@
     "cover": "/images/projects/devstudio-cover.png",
     "previewVideo": "",
     "desktopScreenshots": [
-      { "label": "Learning dashboard desktop", "src": "" },
-      { "label": "AI tools desktop", "src": "" },
-      { "label": "Resources desktop", "src": "" }
+      {
+        "label": "Learning dashboard desktop",
+        "src": ""
+      },
+      {
+        "label": "AI tools desktop",
+        "src": ""
+      },
+      {
+        "label": "Resources desktop",
+        "src": ""
+      }
     ],
     "mobileScreenshots": [
-      { "label": "Home mobile", "src": "" },
-      { "label": "AI tools mobile", "src": "" },
-      { "label": "Wallpaper mobile", "src": "" }
+      {
+        "label": "Home mobile",
+        "src": ""
+      },
+      {
+        "label": "AI tools mobile",
+        "src": ""
+      },
+      {
+        "label": "Wallpaper mobile",
+        "src": ""
+      }
     ]
   },
   "links": {

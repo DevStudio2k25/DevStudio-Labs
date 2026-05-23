@@ -3,7 +3,7 @@
   "slug": "devai",
   "audience": "students, developers, startup founders, software engineers",
   "title": "DevAi",
-  "category": "AI Prompt & Project Generator",
+  "category": "AI & SaaS Products",
   "status": "showcase",
   "featured": true,
   "hasAdminPanel": true,
@@ -53,14 +53,32 @@
     "cover": "",
     "previewVideo": "",
     "desktopScreenshots": [
-      { "label": "Admin analytics dashboard", "src": "" },
-      { "label": "Promo code generation console", "src": "" },
-      { "label": "Community shared blueprint feed", "src": "" }
+      {
+        "label": "Admin analytics dashboard",
+        "src": ""
+      },
+      {
+        "label": "Promo code generation console",
+        "src": ""
+      },
+      {
+        "label": "Community shared blueprint feed",
+        "src": ""
+      }
     ],
     "mobileScreenshots": [
-      { "label": "Interactive project generator form", "src": "" },
-      { "label": "DevTokens watch-and-earn catalog", "src": "" },
-      { "label": "10-phase generative blueprint screen", "src": "" }
+      {
+        "label": "Interactive project generator form",
+        "src": ""
+      },
+      {
+        "label": "DevTokens watch-and-earn catalog",
+        "src": ""
+      },
+      {
+        "label": "10-phase generative blueprint screen",
+        "src": ""
+      }
     ]
   },
   "links": {

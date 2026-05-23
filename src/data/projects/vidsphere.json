@@ -3,7 +3,7 @@
   "slug": "vidsphere",
   "audience": "students, content creators, media startups, mobile developers",
   "title": "VidSphere (StreamTube)",
-  "category": "Video Sharing & Streaming Platform",
+  "category": "Mobile Apps (Flutter & Native)",
   "status": "showcase",
   "featured": true,
   "hasAdminPanel": false,
@@ -54,13 +54,28 @@
     "cover": "",
     "previewVideo": "",
     "desktopScreenshots": [
-      { "label": "Creator dashboard statistics", "src": "" },
-      { "label": "Video feed layout viewer", "src": "" }
+      {
+        "label": "Creator dashboard statistics",
+        "src": ""
+      },
+      {
+        "label": "Video feed layout viewer",
+        "src": ""
+      }
     ],
     "mobileScreenshots": [
-      { "label": "Dynamic Player Feed Screen mobile", "src": "" },
-      { "label": "Channel Subscriptions Profile views", "src": "" },
-      { "label": "Video Upload Selector & Compressor", "src": "" }
+      {
+        "label": "Dynamic Player Feed Screen mobile",
+        "src": ""
+      },
+      {
+        "label": "Channel Subscriptions Profile views",
+        "src": ""
+      },
+      {
+        "label": "Video Upload Selector & Compressor",
+        "src": ""
+      }
     ]
   },
   "links": {

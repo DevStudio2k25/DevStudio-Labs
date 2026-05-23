@@ -3,7 +3,7 @@
   "slug": "mentorhub",
   "audience": "students, mentors, academic administrators, colleges, universities",
   "title": "MentorHub",
-  "category": "Academic Management Portal",
+  "category": "Web Portals & Systems",
   "status": "showcase",
   "featured": true,
   "hasAdminPanel": false,
@@ -54,14 +54,32 @@
     "cover": "",
     "previewVideo": "",
     "desktopScreenshots": [
-      { "label": "Admin user management panel", "src": "" },
-      { "label": "Mentor tracking & report validation", "src": "" },
-      { "label": "Mentee submission portal", "src": "" }
+      {
+        "label": "Admin user management panel",
+        "src": ""
+      },
+      {
+        "label": "Mentor tracking & report validation",
+        "src": ""
+      },
+      {
+        "label": "Mentee submission portal",
+        "src": ""
+      }
     ],
     "mobileScreenshots": [
-      { "label": "Mobile dashboard", "src": "" },
-      { "label": "Submit report drawer", "src": "" },
-      { "label": "Active sessions log", "src": "" }
+      {
+        "label": "Mobile dashboard",
+        "src": ""
+      },
+      {
+        "label": "Submit report drawer",
+        "src": ""
+      },
+      {
+        "label": "Active sessions log",
+        "src": ""
+      }
     ]
   },
   "links": {

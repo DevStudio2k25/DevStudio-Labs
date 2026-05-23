@@ -3,7 +3,7 @@
   "slug": "talktome",
   "audience": "students, designers, web developers, small teams",
   "title": "TalkTome (Web Chat)",
-  "category": "Real-Time Web Chat Application",
+  "category": "Web Portals & Systems",
   "status": "showcase",
   "featured": true,
   "hasAdminPanel": false,
@@ -43,12 +43,24 @@
     "cover": "",
     "previewVideo": "",
     "desktopScreenshots": [
-      { "label": "Welcome login page web", "src": "" },
-      { "label": "Room dashboard messaging panel", "src": "" }
+      {
+        "label": "Welcome login page web",
+        "src": ""
+      },
+      {
+        "label": "Room dashboard messaging panel",
+        "src": ""
+      }
     ],
     "mobileScreenshots": [
-      { "label": "Mobile chat responsive view", "src": "" },
-      { "label": "Floating message reaction overlay", "src": "" }
+      {
+        "label": "Mobile chat responsive view",
+        "src": ""
+      },
+      {
+        "label": "Floating message reaction overlay",
+        "src": ""
+      }
     ]
   },
   "links": {

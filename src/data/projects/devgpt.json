@@ -3,7 +3,7 @@
   "slug": "devgpt",
   "audience": "students, developers, AI enthusiasts, designers, creators",
   "title": "DevGPT (ArkAI)",
-  "category": "AI Assistant & Image Generator",
+  "category": "AI & SaaS Products",
   "status": "showcase",
   "featured": true,
   "hasAdminPanel": false,
@@ -54,14 +54,32 @@
     "cover": "",
     "previewVideo": "",
     "desktopScreenshots": [
-      { "label": "Chat dashboard", "src": "" },
-      { "label": "Image generation engine view", "src": "" },
-      { "label": "Preferences and settings", "src": "" }
+      {
+        "label": "Chat dashboard",
+        "src": ""
+      },
+      {
+        "label": "Image generation engine view",
+        "src": ""
+      },
+      {
+        "label": "Preferences and settings",
+        "src": ""
+      }
     ],
     "mobileScreenshots": [
-      { "label": "Main assistant chatbot mobile", "src": "" },
-      { "label": "Conversations swipe drawer", "src": "" },
-      { "label": "Text-to-Image prompt customizer", "src": "" }
+      {
+        "label": "Main assistant chatbot mobile",
+        "src": ""
+      },
+      {
+        "label": "Conversations swipe drawer",
+        "src": ""
+      },
+      {
+        "label": "Text-to-Image prompt customizer",
+        "src": ""
+      }
     ]
   },
   "links": {

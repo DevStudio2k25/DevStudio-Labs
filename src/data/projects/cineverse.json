@@ -3,7 +3,7 @@
   "slug": "cineverse",
   "audience": "students, media brands, film startups, mobile developers",
   "title": "CineVerse (StreamHub)",
-  "category": "Movie & Anime Streaming Platform",
+  "category": "Mobile Apps (Flutter & Native)",
   "status": "showcase",
   "featured": true,
   "hasAdminPanel": true,
@@ -50,13 +50,28 @@
     "cover": "",
     "previewVideo": "",
     "desktopScreenshots": [
-      { "label": "Admin analytics dashboard console", "src": "" },
-      { "label": "Notice management system view", "src": "" }
+      {
+        "label": "Admin analytics dashboard console",
+        "src": ""
+      },
+      {
+        "label": "Notice management system view",
+        "src": ""
+      }
     ],
     "mobileScreenshots": [
-      { "label": "Home dashboard featured movies", "src": "" },
-      { "label": "Immersive video player workspace", "src": "" },
-      { "label": "Offline downloads progress panel", "src": "" }
+      {
+        "label": "Home dashboard featured movies",
+        "src": ""
+      },
+      {
+        "label": "Immersive video player workspace",
+        "src": ""
+      },
+      {
+        "label": "Offline downloads progress panel",
+        "src": ""
+      }
     ]
   },
   "links": {
