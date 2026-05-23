@@ -25,6 +25,16 @@ const categories = [...new Set(allProjects.map((project) => project.category))]
 const techCount = new Set(allProjects.flatMap((project) => project.techStack)).size
 const featuredProject = featuredProjects[0] ?? allProjects[0]
 
+const featuredTechs = (() => {
+  const counts = {}
+  allProjects.flatMap((p) => p.techStack).forEach((tech) => {
+    counts[tech] = (counts[tech] || 0) + 1
+  })
+  return Object.keys(counts)
+    .sort((a, b) => counts[b] - counts[a])
+    .slice(0, 7)
+})()
+
 export function ProjectsPage() {
   return (
     <>
@@ -95,11 +105,14 @@ export function ProjectsPage() {
               <div className="mt-6 border-t border-border pt-4">
                 <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wide">Active Categories</p>
                 <div className="mt-3 flex flex-wrap gap-1.5">
-                  {categories.map((category) => (
-                    <span key={category} className="rounded-md bg-background border border-border px-2.5 py-1 text-xs font-semibold text-foreground">
-                      {category}
-                    </span>
-                  ))}
+                  {categories.map((category) => {
+                    const count = allProjects.filter((p) => p.category === category).length
+                    return (
+                      <span key={category} className="rounded-md bg-background border border-border px-2.5 py-1 text-xs font-semibold text-foreground">
+                        {category} ({count})
+                      </span>
+                    )
+                  })}
                 </div>
               </div>
             </div>
@@ -108,7 +121,7 @@ export function ProjectsPage() {
             <div className="mt-6 border-t border-border pt-4">
               <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wide">Featured Stacks</p>
               <div className="mt-3 flex flex-wrap gap-1.5">
-                {['React', 'Next.js', 'Flutter', 'Firebase', 'Supabase', 'Gemini AI', 'Tailwind'].map((tech) => (
+                {featuredTechs.map((tech) => (
                   <span key={tech} className="rounded-md bg-mint/55 text-emerald-950 px-2 py-0.5 text-xs font-medium">
                     {tech}
                   </span>
@@ -191,15 +204,18 @@ export function ProjectsPage() {
               description="Use the category chips to understand the available types. Each card opens a detail page with features, tech stack, deliverables, and timeline."
             />
             <div className="flex flex-wrap gap-2">
-              {categories.map((category) => (
-                <a
-                  key={category}
-                  href="#project-library"
-                  className="rounded-md border border-border bg-white/80 px-3 py-2 text-xs font-semibold text-muted-foreground shadow-soft transition-colors hover:border-primary/30 hover:bg-mint/50 hover:text-foreground"
-                >
-                  {category}
-                </a>
-              ))}
+              {categories.map((category) => {
+                const count = allProjects.filter((p) => p.category === category).length
+                return (
+                  <a
+                    key={category}
+                    href="#project-library"
+                    className="rounded-md border border-border bg-white/80 px-3 py-2 text-xs font-semibold text-muted-foreground shadow-soft transition-colors hover:border-primary/30 hover:bg-mint/50 hover:text-foreground"
+                  >
+                    {category} ({count})
+                  </a>
+                )
+              })}
             </div>
           </div>
 

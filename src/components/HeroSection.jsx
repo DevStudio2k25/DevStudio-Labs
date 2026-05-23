@@ -10,6 +10,7 @@ import {
 } from 'lucide-react'
 
 import { buttonVariants } from './ui/button'
+import { allProjects } from '../data/projects'
 import { cn } from '../lib/utils'
 
 const services = [
@@ -26,6 +27,7 @@ const projectModules = [
 ]
 
 export function HeroSection() {
+  const techCount = new Set(allProjects.flatMap((p) => p.techStack)).size
   return (
     <section className="relative overflow-hidden border-b border-border bg-background">
       <div className="absolute left-8 top-24 hidden h-28 w-28 rounded-full bg-mint/70 blur-3xl lg:block" />
@@ -140,12 +142,14 @@ export function HeroSection() {
                 <div className="grid grid-cols-3 gap-3">
                   <div className="rounded-md bg-aqua/55 p-3">
                     <BadgeCheck className="h-4 w-4 text-cyan-800" aria-hidden="true" />
-                    <p className="mt-3 text-lg font-semibold text-cyan-950">1</p>
-                    <p className="text-xs text-cyan-950/65">listed project</p>
+                    <p className="mt-3 text-lg font-semibold text-cyan-950">{allProjects.length}</p>
+                    <p className="text-xs text-cyan-950/65">
+                      {allProjects.length === 1 ? 'listed project' : 'listed projects'}
+                    </p>
                   </div>
                   <div className="rounded-md bg-sky/65 p-3">
                     <Layers3 className="h-4 w-4 text-blue-800" aria-hidden="true" />
-                    <p className="mt-3 text-lg font-semibold text-blue-950">8</p>
+                    <p className="mt-3 text-lg font-semibold text-blue-950">{techCount}</p>
                     <p className="text-xs text-blue-950/65">stack items</p>
                   </div>
                   <div className="rounded-md bg-lime/70 p-3">
